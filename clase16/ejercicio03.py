@@ -2,7 +2,6 @@
 # Enunciado: solicita dos numeros enteros y muestra su suma.
 # Input de ejemplo: num1 = 7, num2 = 8
 # Output esperado (si se corrige): La suma es 15
-# Formula de referencia (si se corrige): resultado = num1 + num2
 num1 = int(input("Primer numero: "))
 num2 = int(input("Segundo numero: "))
 resultado = num1 + num2

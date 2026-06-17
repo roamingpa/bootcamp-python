@@ -2,7 +2,7 @@
 # Enunciado: pide capital, tasa anual (%), anios e inflacion anual (%), y calcula monto final y ganancia real.
 # Input de ejemplo: capital = 1000, tasa = 10, anios = 3, inflacion = 3
 # Output esperado (si se corrige): Monto final: 1331.0 | Ganancia real: positiva
-# Formula de referencia (si se corrige): monto_final = capital * (1 + tasa / 100) ** anios; ganancia_real = monto_final / (1 + inflacion / 100) ** anios - capital
+# Formula de referencia (si se corrige): monto_final = capital x (1 + tasa / 100) ^ anios; ganancia_real = monto_final / (1 + inflacion / 100) ^ anios - capital
 capital = float(input("Capital inicial: "))
 tasa = int(input("Tasa anual (%): "))
 anios = int(input("Anios: "))

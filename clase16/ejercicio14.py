@@ -2,7 +2,7 @@
 # Enunciado: pide horas, minutos y segundos y devuelve el total en segundos.
 # Input de ejemplo: horas = 1, minutos = 1, segundos = 1
 # Output esperado (si se corrige): Total en segundos: 3661
-# Formula de referencia (si se corrige): total_segundos = horas * 3600 + minutos * 60 + segundos
+
 horas = int(input("Horas: "))
 minutos = int(input("Minutos: "))
 segundos = int(input("Segundos: "))

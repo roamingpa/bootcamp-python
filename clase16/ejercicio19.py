@@ -2,7 +2,7 @@
 # Enunciado: pide el radio y muestra area y perimetro.
 # Input de ejemplo: radio = 5
 # Output esperado (si se corrige): Area: 78.54 | Perimetro: 31.42
-# Formula de referencia (si se corrige): area = pi * radio ** 2; perimetro = 2 * pi * radio
+# Formula de referencia (si se corrige): area = pi x radio ^ 2; perimetro = 2 x pi x radio
 import math
 
 radio = int(input("Radio: "))

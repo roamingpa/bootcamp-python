@@ -1,8 +1,7 @@
-# Ejercicio 3: sumar dos numeros
-# Enunciado: solicita dos numeros enteros y muestra su suma.
-# Input de ejemplo: num1 = 7, num2 = 8
-# Output esperado (si se corrige): La suma es 15
-num1 = int(input("Primer numero: "))
-num2 = int(input("Segundo numero: "))
-resultado = num1 + num2
-print(f"La suma es {resultado")
+# Ejercicio 3: set para colores únicos
+# Enunciado: tienes una lista de colores con repetidos. Convierte a set para quedarte
+#             solo con los únicos e imprímelos.
+# Input de ejemplo: ["rojo", "azul", "rojo", "verde", "azul", "amarillo"]
+# Output esperado: {'rojo', 'azul', 'verde', 'amarillo'}  (orden puede variar)
+
+colores = ["rojo", "azul", "rojo", "verde", "azul", "amarillo"]

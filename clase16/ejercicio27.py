@@ -1,16 +1,12 @@
-# Ejercicio 27: contrasena aleatoria reproducible
-# Enunciado: genera una contrasena de 8 caracteres usando letras y digitos.
-# En este ejercicio, import sirve para combinar herramientas: random para elegir y string para caracteres.
-# Input de ejemplo: sin input
-# Output esperado (si se corrige): Contrasena: 8 caracteres variados en cada ejecucion
-import random
-import string
+# Ejercicio 27: filtrar lista con condicion
+# Enunciado: dada una lista de edades, genera dos listas nuevas:
+#             una con los menores de edad (< 18) y otra con los mayores.
+#             No uses list comprehension, usa un for con append().
+# Input de ejemplo: edades = [15, 22, 17, 30, 13, 18, 25, 16, 19]
+# Output esperado:
+# Menores de edad: [15, 17, 13, 16]
+# Mayores o iguales a 18: [22, 30, 18, 25, 19]
 
-random.seed(123)
-alfabeto = string.ascii_letters + string.digits
-contrasena = ""
-
-for i in range(8):
-    contrasena = random.choice(alfabeto)
-
-print(f"Contrasena: {contrasena}")
+edades = [15, 22, 17, 30, 13, 18, 25, 16, 19]
+menores = []
+mayores = []

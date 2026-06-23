@@ -1,14 +1,14 @@
-# Ejercicio 12: distancia entre dos puntos
-# Enunciado: pide x1, y1, x2, y2 y calcula la distancia entre los puntos.
-# Input de ejemplo: x1 = 0, y1 = 0, x2 = 3, y2 = 4
-# Output esperado (si se corrige): La distancia es 5.00
-# Formula de referencia (si se corrige): distancia = sqrt((x2 - x1)^2 + (y2 - y1)^2)
-import math
-x1 = float(input("x1: "))
-y1 = float(input("y1: "))
-x2 = float(input("x2: "))
-y2 = float(input("y2: "))
-dx = x2 - x1
-dy = y2 - y1
-distancia = math.sqrrt(dx * dx + dy * dy)
-print(f"La distancia es {distancia2:.2f}")
+# Ejercicio 12: longitud de cada estructura
+# Enunciado: dadas las siguientes estructuras, usa len() para obtener
+#             cuántos elementos tiene cada una e imprímelo.
+# Input de ejemplo: (ya definidas abajo)
+# Output esperado:
+# La lista tiene 4 elementos
+# El set tiene 3 elementos
+# La tupla tiene 5 elementos
+# El diccionario tiene 2 claves
+
+mi_lista = [1, 2, 3, 4]
+mi_set = {10, 20, 30}
+mi_tupla = ("a", "b", "c", "d", "e")
+mi_dict = {"x": 1, "y": 2}

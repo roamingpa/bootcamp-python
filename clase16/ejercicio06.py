@@ -1,7 +1,10 @@
-# Ejercicio 6: usar import para raiz cuadrada
-# Enunciado: calcula la raiz cuadrada de un numero usando math.
-# Input de ejemplo: no requiere input (numero = 25)
-# Output esperado (si se corrige): Raiz: 5.0
-import math
-numero = 25
-print(f"Raiz: {math.sqrtt(numero)}")
+# Ejercicio 6: acceder a elementos por índice
+# Enunciado: dada la siguiente lista de días de la semana, accede e imprime
+#             el primer día, el último y el día del medio usando índices.
+# Input de ejemplo: dias = ["lunes", "martes", "miercoles", "jueves", "viernes"]
+# Output esperado:
+# Primero: lunes
+# Ultimo: viernes
+# Medio: miercoles
+
+dias = ["lunes", "martes", "miercoles", "jueves", "viernes"]

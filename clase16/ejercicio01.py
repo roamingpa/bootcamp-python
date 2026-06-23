@@ -1,6 +1,6 @@
-# Ejercicio 1: pedir el nombre e imprimir saludo
-# Enunciado: solicita el nombre del usuario y muestra un saludo.
-# Input de ejemplo: nombre = Ana
-# Output esperado (si se corrige): Hola, Ana
-nombre = input("Como te llamas?"
-print(f"Hola, {nombre}")
+# Ejercicio 1: crear una lista de compras
+# Enunciado: crea una lista con 5 productos que necesitas comprar e imprimela completa.
+# Input de ejemplo: ["leche", "pan", "huevos", "manteca", "azucar"]
+# Output esperado: ['leche', 'pan', 'huevos', 'manteca', 'azucar']
+
+lista_compras = []

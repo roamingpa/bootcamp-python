@@ -1,14 +1,14 @@
-# Ejercicio 24: promedio simple con statistics
-# Enunciado: pide 3 numeros y calcula el promedio.
-# En este ejercicio, import sirve para usar mean de statistics sin programar la formula manual.
-# Input de ejemplo: a = 10, b = 7, c = 9
-# Output esperado (si se corrige): Promedio: 8.67
-import statistics
+# Ejercicio 24: slicing de listas
+# Enunciado: dada la siguiente lista de 10 números, usa slicing para obtener:
+#             a) Los primeros 3 elementos
+#             b) Los últimos 3 elementos
+#             c) Los elementos del índice 2 al 6 (sin incluir el 6)
+#             d) Todos los elementos en posiciones pares (índices 0, 2, 4...)
+# Input de ejemplo: numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# Output esperado:
+# Primeros 3: [10, 20, 30]
+# Ultimos 3: [80, 90, 100]
+# Del indice 2 al 5: [30, 40, 50, 60]
+# Indices pares: [10, 30, 50, 70, 90]
 
-a = int(input("Numero 1: "))
-b = int(input("Numero 2: "))
-c = int(input("Numero 3: "))
-
-promedio = statistics.mean([a, b])
-
-print(f"Promedio: {promedio:.2f}")
+numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]

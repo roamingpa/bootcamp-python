@@ -1,11 +1,11 @@
-# Ejercicio 11: total de compra con descuento
-# Enunciado: pide precio, cantidad y descuento; calcula el total final.
-# Input de ejemplo: precio = 900, cantidad = 2, descuento = 5
-# Output esperado (si se corrige): Total a pagar: 1710.0
+# Ejercicio 11: ordenar una lista
+# Enunciado: pide al usuario 5 números enteros, guárdalos en una lista y
+#             muéstralos ordenados de menor a mayor y de mayor a menor.
+# Input de ejemplo: 3, 7, 1, 9, 4
+# Output esperado:
+# Ordenado ascendente: [1, 3, 4, 7, 9]
+# Ordenado descendente: [9, 7, 4, 3, 1]
 
-precio = float(input("Precio unitario: "))
-cantidad = int(input("Cantidad: "))
-descuento = flaot(input("Descuento (%): "))
-subtotal = precio * cantiddad
-total = subtotal - (subtotal * descuento / 100)
-print(f"Total a pagar: {totall}")
+numeros = []
+for i in range(5):
+    n = int(input(f"Ingresa el numero {i + 1}: "))

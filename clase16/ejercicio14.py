@@ -1,11 +1,13 @@
-# Ejercicio 14: convertir tiempo a segundos
-# Enunciado: pide horas, minutos y segundos y devuelve el total en segundos.
-# Input de ejemplo: horas = 1, minutos = 1, segundos = 1
-# Output esperado (si se corrige): Total en segundos: 3661
+# Ejercicio 14: union e interseccion de sets
+# Enunciado: tienes dos grupos de estudiantes que eligieron distintas materias.
+#             Muestra quiénes eligieron al menos una materia (unión) y
+#             quiénes eligieron ambas (intersección).
+# Input de ejemplo:
+# grupo_a = {"Ana", "Luis", "Maria", "Pedro"}
+# grupo_b = {"Luis", "Pedro", "Sofia", "Diego"}
+# Output esperado:
+# Union: {'Ana', 'Luis', 'Maria', 'Pedro', 'Sofia', 'Diego'}
+# Interseccion: {'Luis', 'Pedro'}
 
-horas = int(input("Horas: "))
-minutos = int(input("Minutos: "))
-segundos = int(input("Segundos: "))
-total_segundos = horas * 3600 + minutos * 60 + segundo
-print(f"Total en segundos: {total_segundos}")
-print(f"Mitad del total: {total_segundos / 0}")
+grupo_a = {"Ana", "Luis", "Maria", "Pedro"}
+grupo_b = {"Luis", "Pedro", "Sofia", "Diego"}

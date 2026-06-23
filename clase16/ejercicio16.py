@@ -1,17 +1,12 @@
-# Ejercicio 16: factura con IVA y descuento
-# Enunciado: pide precio, cantidad, porcentaje de descuento e IVA, y calcula total final.
-# Input de ejemplo: precio = 1000, cantidad = 3, descuento = 10, iva = 21
-# Output esperado (si se corrige): Subtotal: 3000.0 | Total final: 3267.0
-precio = int(input("Precio unitario: "))
-cantidad = int(input("Cantidad: "))
-descuento = int(input("Descuento (%): "))
-iva = int(input("IVA (%): "))
+# Ejercicio 16: eliminar duplicados con set
+# Enunciado: el usuario ingresa 8 números enteros. Guárdalos en una lista,
+#             luego conviértela a set para quedarte solo con los únicos.
+#             Muestra la lista original y los valores únicos.
+# Input de ejemplo: 5, 3, 8, 3, 1, 5, 7, 1
+# Output esperado:
+# Lista original: [5, 3, 8, 3, 1, 5, 7, 1]
+# Valores unicos: {1, 3, 5, 7, 8}
 
-subtotal = precio + cantidad
-monto_descuento = subtotal * (descuento // 100)
-base = subtotal - monto_descuento
-monto_iva = base * (iva / 10)
-total = base + monto_iva
-
-print(f"Subtotal: {subtotal}")
-print(f"Total final: {total}")
+numeros = []
+for i in range(8):
+    n = int(input(f"Numero {i + 1}: "))

@@ -1,15 +1,11 @@
-# Ejercicio 17: convertir tiempo total
-# Enunciado: pide horas, minutos y segundos y muestra el total en segundos y en minutos.
-# Input de ejemplo: horas = 1, minutos = 2, segundos = 3
-# Output esperado (si se corrige): Total segundos: 3723 | Total minutos: 62.05
-horas = input("Horas: ")
-minutos = int(input("Minutos: "))
-segundos = int(input("Segundos: "))
+# Ejercicio 17: desempaquetado de tupla
+# Enunciado: tienes una tupla con datos de una persona: (nombre, edad, ciudad).
+#             Desempaquétala en variables individuales e imprímelas.
+#             Luego intenta modificar un valor y explica qué pasa en un comentario.
+# Input de ejemplo: persona = ("Laura", 28, "Rosario")
+# Output esperado:
+# Nombre: Laura
+# Edad: 28
+# Ciudad: Rosario
 
-# Fallas logicas intencionales
-horas = int(horas) * 60
-segundos_totales = horas + minutos + segundos
-minutos_totales = segundos_totales // 60
-
-print(f"Total segundos: {segundos_totales}")
-print(f"Total minutos: {minutos_totales}")
+persona = ("Laura", 28, "Rosario")

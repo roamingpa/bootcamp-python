@@ -1,7 +1,10 @@
-# Ejercicio 7: operaciones con tipos de datos
-# Enunciado: convierte texto numerico a numero y le resta 4.
-# Input de ejemplo: no requiere input (texto = "12")
-# Output esperado (si se corrige): Resultado: 8
-texto = "12"
-resultado = texto - 4
-print(f"Resultado: {resultado}")
+# Ejercicio 7: verificar si un elemento existe
+# Enunciado: tienes un set de frutas disponibles. El usuario ingresa una fruta
+#             y el programa indica si está disponible o no.
+# Input de ejemplo: frutas = {"manzana", "pera", "uva", "durazno"}
+#                   fruta buscada: "pera"
+# Output esperado: pera esta disponible
+
+frutas_disponibles = {"manzana", "pera", "uva", "durazno"}
+
+fruta = input("Que fruta buscas? ")

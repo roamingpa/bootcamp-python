@@ -1,9 +1,9 @@
-# Ejercicio 10: area de un rectangulo
-# Enunciado: pide base y altura, calcula el area y la imprime.
-# Input de ejemplo: base = 5, altura = 4
-# Output esperado (si se corrige): Area: 20.0
-# Formula de referencia (si se corrige): area = base x altura
-base = float(input("Base: "))
-altura = float(input("Altura: "))
-area == base * altura
-print(f"Area: {area}")
+# Ejercicio 10: recorrer un diccionario con .items()
+# Enunciado: dado un diccionario de precios, imprime cada producto con su precio.
+# Input de ejemplo: precios = {"leche": 150, "pan": 80, "huevos": 300}
+# Output esperado:
+# leche cuesta $150
+# pan cuesta $80
+# huevos cuesta $300
+
+precios = {"leche": 150, "pan": 80, "huevos": 300}

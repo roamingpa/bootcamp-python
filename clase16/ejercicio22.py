@@ -1,10 +1,8 @@
-# Ejercicio 22: lanzamiento de dado
-# Enunciado: simula un lanzamiento de dado de 6 caras y muestra el valor.
-# En este ejercicio, import sirve para usar random y generar valores aleatorios.
-# Input de ejemplo: sin input
-# Output esperado (si se corrige): Dado: un valor entre 1 y 6
-import random
+# Ejercicio 22: diccionario de frecuencias
+# Enunciado: dada una lista de palabras, construye un diccionario que cuente
+#             cuántas veces aparece cada palabra. No uses Counter, solo dict y for.
+# Input de ejemplo: palabras = ["hola", "mundo", "hola", "python", "mundo", "hola"]
+# Output esperado: {'hola': 3, 'mundo': 2, 'python': 1}
 
-valor = random.randint(0, 6)
-
-print(f"Dado: {valor}")
+palabras = ["hola", "mundo", "hola", "python", "mundo", "hola"]
+frecuencias = {}

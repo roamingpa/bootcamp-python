@@ -1,18 +1,11 @@
-# Ejercicio 18: promedio ponderado de curso
-# Enunciado: pide 4 notas y calcula promedio con pesos 20%, 20%, 30%, 30%.
-# Input de ejemplo: n1 = 9, n2 = 8, n3 = 7, n4 = 8
-# Output esperado (si se corrige): Promedio final: 7.9
-n1 = int(input("Nota 1: "))
-n2 = int(input("Nota 2: "))
-n3 = int(input("Nota 3: "))
-n4 = int(input("Nota 4: "))
+# Ejercicio 18: recorrer claves y valores por separado
+# Enunciado: dado el diccionario de notas de un alumno, imprime primero
+#             solo las materias (keys) y luego solo las notas (values).
+#             Al final calcula el promedio.
+# Input de ejemplo: notas = {"Matematica": 7, "Historia": 9, "Fisica": 6, "Ingles": 8}
+# Output esperado:
+# Materias: dict_keys(['Matematica', 'Historia', 'Fisica', 'Ingles'])
+# Notas: dict_values([7, 9, 6, 8])
+# Promedio: 7.5
 
-p1 = 20
-p2 = 20
-p3 = 30
-p4 = 30
-
-promedio = (n1 * p1 + n2 * p2 + n3 * p3 + n4 * p4) / 1000
-promedio = int(promedio)
-
-print(f"Promedio final: {promedio}")
+notas = {"Matematica": 7, "Historia": 9, "Fisica": 6, "Ingles": 8}

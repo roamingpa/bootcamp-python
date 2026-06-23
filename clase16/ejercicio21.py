@@ -1,12 +1,22 @@
-# Ejercicio 21: raiz cuadrada y redondeo
-# Enunciado: pide un numero positivo y muestra su raiz cuadrada redondeada a 2 decimales.
-# En este ejercicio, import sirve para traer funciones de otra libreria, como sqrt de math.
-# Input de ejemplo: numero = 49
-# Output esperado (si se corrige): Raiz: 7.00
-import math
+# Ejercicio 21: elegir la estructura correcta
+# Enunciado: para cada caso de uso de abajo, define la variable usando la
+#             estructura más adecuada (list, set, tuple, dict) y justifica
+#             tu elección en un comentario.
+#
+# Casos:
+# a) Los meses del año (fijos, no cambian)
+# b) Los ingredientes únicos de una receta (sin repetidos, sin orden importa)
+# c) Un registro de temperatura por hora (importa el orden)
+# d) Los datos personales de un usuario: nombre, edad, email
 
-numero = float(input("Numero positivo: "))
+# a) Meses del año -> usa: ?
+meses = None  # reemplaza None con la estructura correcta
 
-raiz = math.sqrt(numero + 1)
+# b) Ingredientes únicos -> usa: ?
+ingredientes = None
 
-print(f"Raiz: {raiz:.2f}")
+# c) Temperaturas por hora -> usa: ?
+temperaturas = None
+
+# d) Datos de usuario -> usa: ?
+usuario = None

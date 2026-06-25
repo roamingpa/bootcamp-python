@@ -16,6 +16,7 @@ import sys
 
 sueldo = int(sys.argv[1])
 
+
 # Ingresar gasto del mes n..veces hasta 5
 max_gastos = 5
 gastos = [] # ... 

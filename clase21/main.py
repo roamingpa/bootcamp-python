@@ -82,3 +82,6 @@ if hp_actual == 0:
     print("Has derrotado a tu oponente!!!!!!")
 elif stamina_actual == 0:
     print("Te has quedado sin stamina, juega otra vez!")
+
+
+### nuevo comentario

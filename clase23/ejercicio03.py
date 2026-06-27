@@ -61,10 +61,28 @@ Ejemplo de uso:
 
     El PIN fue forzado en 40 intentos.
 
-----------------------------------------------------------------------
-Desafío extra (opcional):
-    ¿Cuál es el PIN de 4 dígitos más difícil de adivinar?
-    ¿Y el más fácil? ¿Por qué?
 
 ----------------------------------------------------------------------
 """
+
+import getpass
+
+posibles_digitos = "0123456789"
+pin = getpass.getpass("Ingresa el PIN: ")
+while not pin.isdigit():
+    print("ERROR: El pin debe solo contener numeritos")
+    pin = getpass.getpass("Ingresa el PIN: ")
+
+intentos = 0
+# "1234"
+for digito_objetivo in pin:
+    print(f"Digito objetivo: {digito_objetivo}")
+    for digito_intento in posibles_digitos:
+        print(f"Digito intento: {digito_intento}")
+        intentos += 1
+        if digito_intento == digito_objetivo:
+            print(f"Digito encontrado: {digito_objetivo} HACEN MATCH")
+            break
+
+print(f"El PIN fue forzado en {intentos} intentos")
+    

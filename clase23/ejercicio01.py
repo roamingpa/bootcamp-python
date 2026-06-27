@@ -47,3 +47,31 @@ Salida esperada:
 """
 
 import sys
+
+inventario = {
+    "manzanas": 120,
+    "peras": 8,
+    "naranjas": 45,
+    "plátanos": 3,
+    "uvas": 200,
+    "sandías": 12,
+    "melones": 6,
+    "kiwis": 90,
+    "frambuesas": 15,
+    "arándanos": 4,
+}
+
+umbral = int(sys.argv[1])
+
+# { llave: valor for producto, stock in inventario.items() if condicion }
+print({
+    producto: stock for producto, stock in inventario.items() if stock >= umbral
+})
+
+
+nuevo_inventario = {}
+for producto, stock in inventario.items():
+    if stock >= umbral:
+        nuevo_inventario["producto"] = stock
+print(nuevo_inventario)
+

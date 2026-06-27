@@ -40,8 +40,8 @@ El programa sigue este diagrama de decision:
                             v          v
                  "Puede ser la     "Conecta el
                   GPU o pantalla.   cable de video
-                  Lleva a           e intenta de
-                  tecnico."         nuevo."
+                  Lleva a           
+                  tecnico."         "
                       FIN               FIN
 
 Requerimientos:
@@ -55,7 +55,6 @@ Requerimientos:
 Pistas:
 - Usa un while True con un break para el loop de validacion de respuesta
 - Anida los if/elif dentro de cada etapa del diagnostico
-- La flecha de retorno del diagrama (si dice No, vuelve) es el while True
 
 ----------------------------------------------------------------------
 Ejemplo de sesion:
@@ -83,3 +82,45 @@ Ejemplo de sesion (flujo completo exitoso):
 
 ----------------------------------------------------------------------
 """
+print("=== DIAGNOSTICO: MI COMPUTADOR NO ENCIENDE ===")
+
+while True:
+  respuesta = input("Cable de poder enchufado? (si/no): ").lower()
+  if respuesta == "si":
+      break
+  elif respuesta == "no":
+      print("Conecta el cable e intenta de nuevo")
+  else:
+      print('Respuesta invalida. Ingresa "si" o "no"')
+
+while True:
+  respuesta = input("Enciende el LED del boton? (si/no): ").lower()
+  if respuesta == "si":
+      break
+  elif respuesta == "no":
+      print("Puede ser la fuente de poder. Lleva a servicio técnico")
+      exit()
+  else:
+      print('Respuesta invalida. Ingresa "si" o "no"')
+
+while True:
+  # "SI".lower() -> transformar el string a minusculas
+  # "SI".upper() -> transformar el string a mayusculas
+  respuesta = input("Hay imagen en pantalla? (si/no): ").lower()
+  if respuesta == "si":
+      print("El computador esta funcionando!")
+      exit()
+  elif respuesta == "no":
+      break
+  else:
+      print('Respuesta invalida. Ingresa "si" o "no"')
+
+while True:
+  respuesta = input("Cable de video bien conectado? (si/no): ").lower()
+  if respuesta == "si":
+      print("Puede ser la GPU o pantalla. Lleva a técnico")
+      break
+  elif respuesta == "no":
+      print("Conecta el cable de video")
+  else:
+      print('Respuesta invalida. Ingresa "si" o "no"')

@@ -13,15 +13,20 @@
 5. [Condicionales (if / elif / else)](#5-condicionales-if--elif--else)
 6. [Listas](#6-listas)
 7. [Diccionarios](#7-diccionarios)
-8. [Conjuntos (sets)](#8-conjuntos-sets)
-9. [Tuplas](#9-tuplas)
-10. [El bucle for](#10-el-bucle-for)
-11. [El bucle while](#11-el-bucle-while)
-12. [Comprehensions](#12-comprehensions)
-13. [Módulo random](#13-módulo-random)
-14. [Argumentos por consola (sys.argv)](#14-argumentos-por-consola-sysargv)
-15. [Módulo math](#15-módulo-math)
-16. [Errores comunes](#16-errores-comunes)
+8. [Métodos de diccionarios](#8-métodos-de-diccionarios)
+9. [Conjuntos (sets)](#9-conjuntos-sets)
+10. [Tuplas](#10-tuplas)
+11. [El bucle for](#11-el-bucle-for)
+12. [El bucle while](#12-el-bucle-while)
+13. [Comprehensions](#13-comprehensions)
+14. [Módulo random](#14-módulo-random)
+15. [Argumentos por consola (sys.argv)](#15-argumentos-por-consola-sysargv)
+16. [Módulo math](#16-módulo-math)
+17. [Funciones](#17-funciones)
+18. [Parámetros avanzados en funciones](#18-parámetros-avanzados-en-funciones)
+19. [Docstrings](#19-docstrings)
+20. [Modularización](#20-modularización)
+21. [Errores comunes](#21-errores-comunes)
 
 ---
 
@@ -239,7 +244,54 @@ print(estudiantes["Ana"]["notas"])   # [8, 7, 9]
 
 ---
 
-## 8. Conjuntos (sets)
+## 8. Métodos de diccionarios
+
+### Acceder a claves, valores y pares
+
+```python
+persona = {"nombre": "Ana", "edad": 28, "ciudad": "Rosario"}
+
+persona.keys()    # dict_keys(['nombre', 'edad', 'ciudad'])
+persona.values()  # dict_values(['Ana', 28, 'Rosario'])
+persona.items()   # dict_items([('nombre', 'Ana'), ('edad', 28), ...])
+```
+
+### .get() — acceso seguro (sin error si la clave no existe)
+
+```python
+persona.get("nombre")              # "Ana"
+persona.get("telefono")            # None  (no da error)
+persona.get("telefono", "Sin tel") # "Sin tel"  (valor por defecto)
+```
+
+### .update() — agregar o modificar varias claves a la vez
+
+```python
+persona.update({"edad": 29, "email": "ana@mail.com"})
+# persona ahora tiene edad=29 y email nuevo
+```
+
+### .pop() — eliminar una clave y obtener su valor
+
+```python
+telefono = persona.pop("telefono", None)  # elimina y devuelve el valor
+# Si la clave no existe y no se pone valor por defecto, da KeyError
+```
+
+### .popitem() — eliminar el último par insertado
+
+```python
+ultimo = persona.popitem()  # devuelve (clave, valor) del último par
+```
+
+> 💡 **Cuándo usar cada método:**
+> - `.get()` → cuando la clave puede no existir
+> - `.update()` → cuando querés cambiar o agregar varios campos a la vez
+> - `.pop()` → cuando necesitás eliminar Y usar el valor al mismo tiempo
+
+---
+
+## 9. Conjuntos (sets)
 
 Un conjunto guarda valores **únicos** y **sin orden**. Ideal para eliminar duplicados.
 
@@ -263,7 +315,7 @@ inscriptos | rindieron      # Todos juntos (sin repetidos)
 
 ---
 
-## 9. Tuplas
+## 10. Tuplas
 
 Como una lista, pero **no se puede modificar** una vez creada.
 
@@ -279,7 +331,7 @@ colores_semaforo[0]   # "rojo"
 
 ---
 
-## 10. El bucle for
+## 11. El bucle for
 
 Repite algo para cada elemento de una secuencia.
 
@@ -318,7 +370,7 @@ for i in range(5):
 
 ---
 
-## 11. El bucle while
+## 12. El bucle while
 
 Repite mientras una condición sea verdadera.
 
@@ -348,7 +400,7 @@ print(f"Total: {sum(gastos)}")
 
 ---
 
-## 12. Comprehensions
+## 13. Comprehensions
 
 Una forma **corta y elegante** de crear listas o diccionarios.
 
@@ -385,7 +437,7 @@ caros = {producto: precio for producto, precio in precios.items() if precio > 80
 
 ---
 
-## 13. Módulo random
+## 14. Módulo random
 
 Sirve para generar cosas al azar.
 
@@ -409,7 +461,7 @@ decimal = random.random()
 
 ---
 
-## 14. Argumentos por consola (sys.argv)
+## 15. Argumentos por consola (sys.argv)
 
 Permiten pasarle datos al programa cuando lo ejecutas desde la terminal.
 
@@ -433,7 +485,7 @@ python programa.py Juan 25
 
 ---
 
-## 15. Módulo math
+## 16. Módulo math
 
 Para operaciones matemáticas más avanzadas.
 
@@ -450,7 +502,181 @@ math.floor(4.9)     # Redondear hacia abajo → 4
 
 ---
 
-## 16. Errores comunes
+## 17. Funciones
+
+Una función es un bloque de código reutilizable que tiene un nombre, puede recibir datos (**parámetros**) y puede devolver un resultado (**return**).
+
+```python
+# Definir una función
+def saludar(nombre):
+    return f"Hola, {nombre}!"
+
+# Llamar (invocar) la función
+print(saludar("Ana"))   # Hola, Ana!
+print(saludar("Luis"))  # Hola, Luis!
+```
+
+### Función con múltiples parámetros y return
+
+```python
+def calcular_promedio(lista):
+    return sum(lista) / len(lista)
+
+notas = [7, 8, 9, 6]
+print(calcular_promedio(notas))   # 7.5
+```
+
+### Función que retorna múltiples valores (tupla)
+
+```python
+def estadisticas(lista):
+    return min(lista), max(lista), sum(lista) / len(lista)
+
+minimo, maximo, promedio = estadisticas([3, 7, 1, 9])
+print(minimo, maximo, promedio)   # 1 9 5.0
+```
+
+> 💡 `def` define la función, `return` devuelve el resultado. Sin `return` la función devuelve `None`.
+
+---
+
+## 18. Parámetros avanzados en funciones
+
+### Parámetros por defecto (opcionales)
+
+```python
+def presentar(nombre, rol="estudiante"):
+    print(f"Soy {nombre} y soy {rol}.")
+
+presentar("Ana")               # Soy Ana y soy estudiante.
+presentar("Luis", "instructor") # Soy Luis y soy instructor.
+```
+
+### *args — cantidad variable de argumentos
+
+```python
+def sumar(*args):
+    return sum(args)
+
+print(sumar(1, 2))         # 3
+print(sumar(1, 2, 3, 4))   # 10
+print(sumar())             # 0
+```
+
+### **kwargs — argumentos nombrados variables
+
+```python
+def crear_perfil(**kwargs):
+    for clave, valor in kwargs.items():
+        print(f"{clave}: {valor}")
+
+crear_perfil(nombre="Ana", edad=28, ciudad="Rosario")
+# nombre: Ana
+# edad: 28
+# ciudad: Rosario
+```
+
+### Función como argumento
+
+```python
+def aplicar(lista, funcion):
+    return funcion(lista)
+
+numeros = [3, 1, 7, 2]
+print(aplicar(numeros, sum))   # 13
+print(aplicar(numeros, max))   # 7
+print(aplicar(numeros, len))   # 4
+```
+
+> 💡 Al pasar una función como argumento, se escribe **sin paréntesis**: `sum` no `sum()`.
+
+---
+
+## 19. Docstrings
+
+Un docstring es la documentación que se escribe dentro de una función para explicar qué hace, qué recibe y qué devuelve.
+
+```python
+def calcular_descuento(precio, porcentaje):
+    """
+    Calcula el precio final luego de aplicar un descuento.
+
+    Args:
+        precio (float): Precio original del producto.
+        porcentaje (float): Porcentaje de descuento a aplicar.
+
+    Returns:
+        float: Precio con el descuento aplicado.
+    """
+    return precio * (1 - porcentaje / 100)
+```
+
+Para ver el docstring de una función:
+
+```python
+help(calcular_descuento)
+# o en algunos editores, hover sobre el nombre de la función
+```
+
+> 💡 Las comillas triples `"""..."""` pueden ser simples o dobles. El formato más usado es **Google style** (Args / Returns).
+
+---
+
+## 20. Modularización
+
+Dividir un proyecto en varios archivos `.py` (módulos) para mantener el código ordenado y reutilizable.
+
+### Crear un módulo
+
+```python
+# archivo: operaciones.py
+def sumar(a, b):
+    return a + b
+
+def restar(a, b):
+    return a - b
+```
+
+### Las 3 formas de importar
+
+```python
+# Forma 1: import módulo  → llamar con módulo.funcion()
+import operaciones
+operaciones.sumar(3, 5)
+
+# Forma 2: import módulo as alias  → llamar con alias.funcion()
+import operaciones as op
+op.sumar(3, 5)
+
+# Forma 3: from módulo import función  → llamar directo
+from operaciones import sumar
+sumar(3, 5)
+```
+
+### Estructura recomendada de un proyecto
+
+```
+mi_proyecto/
+    main.py          ← script principal, llama a los módulos
+    operaciones.py   ← funciones matemáticas
+    datos.py         ← funciones para manejar datos
+```
+
+```python
+# main.py
+from operaciones import sumar, restar
+
+a = float(input("Número A: "))
+b = float(input("Número B: "))
+print("Suma:", sumar(a, b))
+print("Resta:", restar(a, b))
+```
+
+> 💡 El archivo `main.py` es la **entrada** del programa. Los módulos son herramientas que `main.py` usa.
+
+---
+
+## 21. Errores comunes
 
 ### NameError — variable no definida
 ```python
@@ -502,6 +728,9 @@ if x == 5:  # ✅
 | `continue` | Saltear la vuelta actual del bucle |
 | Lista `[]` | Guardar varios valores en orden, se puede modificar |
 | Diccionario `{}` | Guardar pares clave-valor |
+| `.get()` | Acceder a clave de dict sin riesgo de error |
+| `.update()` | Agregar o modificar varias claves a la vez |
+| `.pop()` | Eliminar clave de dict y obtener su valor |
 | Set `{}` | Guardar valores únicos sin orden |
 | Tupla `()` | Guardar valores que no van a cambiar |
 | Comprehension | Crear listas/diccionarios de forma corta |
@@ -509,6 +738,13 @@ if x == 5:  # ✅
 | `sys.argv` | Pasarle datos al programa desde la terminal |
 | `random` | Generar valores al azar |
 | `math` | Operaciones matemáticas avanzadas |
+| `def` / `return` | Definir una función reutilizable |
+| Parámetro por defecto | Parámetro opcional con valor preestablecido |
+| `*args` | Función que acepta cualquier cantidad de argumentos |
+| `**kwargs` | Función que acepta argumentos nombrados variables |
+| Función como argumento | Pasar `sum`, `len`, etc. como parámetro |
+| Docstring `"""..."""` | Documentar qué hace una función |
+| `import módulo` | Usar código de otro archivo `.py` |
 
 ---
 

@@ -13,3 +13,5 @@ config = {
 }
 
 clave = input("Ingresa el nombre de la configuracion: ")
+
+print(config.get(clave, "Configuracion no encontrada"))

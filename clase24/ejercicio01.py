@@ -19,3 +19,15 @@
 # Mouse: $12000
 
 precios = {"Notebook": 700000, "Teclado": 25000, "Mouse": 12000}
+
+print("-- Productos --")
+for producto in precios.keys():
+    print(producto)
+
+print("-- Precios --")
+for precio in precios.values():
+    print(precio)
+
+print("-- Detalle --")
+for producto, precio in precios.items():
+    print(f"{producto}: ${precio}")

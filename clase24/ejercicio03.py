@@ -9,4 +9,26 @@
 # Telefono eliminado: 555-1234
 # {'nombre': 'Maria Lopez', 'edad': 30, 'salario': 850000, 'departamento': 'Ventas'}
 
-empleado = {"nombre": "Juan Perez", "edad": 30, "salario": 750000, "telefono": "555-1234"}
+empleado = {
+    "nombre": "Juan Perez", 
+    "edad": 30, 
+    "salario": 750000, 
+    "telefono": "555-1234"
+}
+
+# Agrega la clave "departamento" con valor "Ventas" 
+empleado["departamento"] = "Ventas"
+
+# Actualiza nombre y salario usando .update()
+# Maria Lopez
+"""
+empleado["nombre"] = "Maria Lopez"
+# 850_000
+empleado["salario"] = 850_000
+"""
+empleado.update(nombre="Maria Lopez", salario=850_000)
+
+# 3) Elimina la clave "telefono" usando .pop() e imprime el valor eliminado
+print(empleado.pop("telefono"))
+
+print(empleado)

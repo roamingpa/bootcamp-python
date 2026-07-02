@@ -1,0 +1,5 @@
+Ana,22,Chile
+Luis,30,Argentina
+Sofia,25,Mexico
+Pedro,19,Chile
+Maria,28,Colombia

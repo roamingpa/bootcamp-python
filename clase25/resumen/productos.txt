@@ -1,0 +1,20 @@
+# NESTLE CHILE S.A. - Catalogo de Productos
+# Informacion nutricional por 100g (solidos) o 100ml (liquidos)
+# Fuente: Etiquetado nutricional interno - Julio 2026
+nombre,tipo,calorias,azucares,sodio,grasas_sat
+Kit Kat Original,solido,518,47.5,95,14.8
+Nesquik Polvo Chocolate,solido,375,73.0,185,1.5
+Milo Polvo Clasico,solido,361,50.6,380,2.4
+La Lechera Leche Condensada,solido,321,54.0,130,5.6
+Maggi Fideos Cabello de Angel,solido,358,2.5,860,0.5
+Mogul Gomitas Frutales,solido,330,68.0,45,0.0
+Nescafe Gold Puro,solido,287,0.0,75,0.0
+Nestle Crunch,solido,,32.0,180,8.2
+Nescafe 3 en 1 Preparado,liquido,67,10.5,37,0.8
+Nesquik Bebida Lactea Chocolate,liquido,75,11.2,52,0.9
+Jugo Ecofrutas Naranja,liquido,44,9.8,15,0.0
+Nescafe Decaf Soluble,solido,310,0.0,0.0,0.0
+Milo Bebida Lista,liquido,70,8.5,110,0.5
+Maggi Crema de Champiñones,semiliquido,352,3.1,740,1.2
+Nestle Splash Limon,liquido,20,4.5,10,0.0
+Nestle Aquarel Con Limon,liquido,-5,0.0,8,0.0

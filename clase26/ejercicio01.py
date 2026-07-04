@@ -8,8 +8,12 @@
 # Hola, soy Luis y soy instructor.
 
 def presentar(nombre, rol="estudiante"):
-    pass  # reemplaza con el codigo correcto
+    print(f"Hola, soy {nombre} y soy {rol}")
 
-
+# llamar una funciona
+# ejecuta esa funcion
+# nombre_funcion()
+# nombre_funcion(param1,param2)
 presentar("Ana")
 presentar("Luis", "instructor")
+presentar(rol="instructor", nombre="Luis")

@@ -1,0 +1,1 @@
+{'atributos': {'STR': 2, 'AGI': 8, 'INT': 0, 'DEX': 0}, 'estadisticas': {'HP': (100, 100), 'MANA': (50, 50), 'ORO': (1000, 1000)}, 'inventario': {'ESPADA DE MADERA': 1, 'POCIÓN DE MANA': 2, 'POCIÓN DE HP': 2}}

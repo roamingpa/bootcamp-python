@@ -5,7 +5,7 @@
 #               1) Solo nombre y edad (usa los valores por defecto)
 #               2) Con pais distinto al defecto
 #               3) Con todos los argumentos usando argumentos con nombre (keyword args)
-#
+# kwargs
 # Input de ejemplo:
 #   crear_perfil("Ana", 22)
 #   crear_perfil("Luis", 30, "Argentina")
@@ -17,9 +17,9 @@
 # Nombre: Sofia | Edad: 25 | Pais: Mexico | Rol: instructora
 
 def crear_perfil(nombre, edad, pais="Chile", rol="estudiante"):
-    pass  # reemplaza con el codigo correcto
+    return f"Nombre: {nombre} /// Edad: {edad} /// Pais: {pais} /// Rol: {rol}"
 
 
 print(crear_perfil("Ana", 22))
 print(crear_perfil("Luis", 30, "Argentina"))
-print(crear_perfil(nombre="Sofia", edad=25, pais="Mexico", rol="instructora"))
+print(crear_perfil(rol="instructora", nombre="Sofia", edad=25, pais="Mexico"))

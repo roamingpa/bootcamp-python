@@ -9,17 +9,22 @@
 # Longitudes: [4, 5, 6]
 
 def mayusculas(lista):
-    pass  # retorna lista con cada elemento en mayusculas
-
+    resultado = []
+    for palabra in lista:
+        resultado.append(palabra.upper())
+    return resultado
 
 def longitudes(lista):
-    pass  # retorna lista con la longitud de cada elemento
+    return [len(palabra) for palabra in lista]
 
 
 def aplicar(lista, funcion):
-    pass  # aplica la funcion y retorna el resultado
+    return funcion(lista)
 
 
 palabras = ["hola", "mundo", "python"]
+print("Mayusculas:", mayusculas(palabras))
+print("Longitudes:", longitudes(palabras))
+
 print("Mayusculas:", aplicar(palabras, mayusculas))
 print("Longitudes:", aplicar(palabras, longitudes))

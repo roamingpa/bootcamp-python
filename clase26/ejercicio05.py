@@ -28,7 +28,13 @@ precios = {
 
 
 def filtrar(diccionario, umbral, modo="mayor"):
-    pass  # reemplaza con el codigo correcto
+    resultados = {}
+    for clave, valor in diccionario.items():
+        if modo == "mayor" and valor > umbral:
+            resultados[clave] = valor
+        elif modo == "menor" and valor < umbral:
+            resultados[clave] = valor
+    return resultados
 
 
 if len(sys.argv) < 2:
@@ -36,4 +42,14 @@ if len(sys.argv) < 2:
 else:
     umbral = int(sys.argv[1])
     modo = sys.argv[2] if len(sys.argv) == 3 else "mayor"
+    if modo not in ("mayor", "menor"):
+        print("Lo sentimos, no es una operacion valida")
+        exit()
     # llama a filtrar() e imprime el resultado
+    resultados = filtrar(precios, umbral, modo)
+
+    if modo == "mayor":
+        print(f"Los productos mayores al umbral son: {', '.join(resultados)}")
+    elif modo == "menor":
+        print(f"Los productos menores al umbral son: {', '.join(resultados)}")
+

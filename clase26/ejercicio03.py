@@ -10,7 +10,17 @@
 # ocupacion: desarrollador
 
 def crear_perfil(**kwargs):
-    pass  # reemplaza con el codigo correcto
+    print("-- Perfil --")
+    if len(kwargs) == 0:
+        print("No hay información del perfil")
+    for llave, valor in kwargs.items():
+        print(f"{llave}: {valor}")
 
 
 crear_perfil(nombre="Carlos", edad=28, ciudad="Santiago", ocupacion="desarrollador")
+crear_perfil(nombre="Carlos", apellido="Cabrera")
+crear_perfil(sobrenombre="Carlitos")
+crear_perfil()
+
+
+

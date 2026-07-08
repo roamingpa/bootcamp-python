@@ -35,4 +35,34 @@ Output esperado:
 
 # Escribe tu código aquí 👇
 
+class Producto:
+    def __init__(self, nombre, precio, stock):
+        self.nombre = nombre
+        self.precio = precio
+        self.stock = stock
 
+    def mostrar_info(self):
+        print(f"Producto: {self.nombre} | Precio: ${self.precio} | Stock: {self.stock}")
+
+    def vender(self, cantidad):
+        # si es que el stock no es suficiente, tenemos que mandar un msj de error
+        if cantidad > self.stock:
+            print(f"Error: no hay suficiente stock. Stock actual: {self.stock}")
+            return
+        # restar al stock
+        self.stock -= cantidad
+
+    def aplicar_descuento(self, porcentaje):
+        self.precio *= ((100 - porcentaje)/100)
+   
+
+
+if __name__ == "__main__":
+    p = Producto("Teclado", 25000, 10)
+
+    p.mostrar_info()
+    p.vender(3)
+    p.mostrar_info()
+    p.aplicar_descuento(10)
+    p.mostrar_info()
+    p.vender(20)

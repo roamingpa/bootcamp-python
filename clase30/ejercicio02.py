@@ -48,4 +48,52 @@ Output esperado:
 
 # Escribe tu código aquí 👇
 
+class CuentaBancaria:
+    banco = "Banco Python"
 
+    def __init__(self, titular, saldo = 0):
+        self.titular = titular
+        self.saldo = saldo
+    
+    def mostrar_saldo(self):
+        print(f"[{self.banco}] {self.titular} — Saldo: ${self.saldo}")
+
+    def depositar(self, monto):
+        if monto <= 0:
+            print("ERROR: NO PUEDES DEPOSITAR 0 O UN MONTO NEGATIVO")
+            return
+        self.saldo += monto 
+    
+    def girar(self, monto):
+        if monto > self.saldo:
+            print(f"Error: saldo insuficiente. Saldo actual: ${self.saldo}")
+            return
+        self.saldo -= monto
+    
+    def transferir(self, monto, otra_cuenta):
+        self.girar(monto)
+        otra_cuenta.depositar(monto)
+
+    @staticmethod
+    def es_monto_valido(monto):
+        return monto > 0
+
+
+if __name__ == "__main__":
+    cuenta_ana   = CuentaBancaria("Ana", 50000)
+    cuenta_pedro = CuentaBancaria("Pedro")
+
+    cuenta_ana.mostrar_saldo()
+    cuenta_ana.depositar(20000)
+    cuenta_ana.mostrar_saldo()
+    
+    cuenta_ana.transferir(15000, cuenta_pedro)
+    # cuenta_ana.girar(10_000)
+    # cuenta_pedro.depositar(10_000)
+
+
+    cuenta_ana.mostrar_saldo()
+    cuenta_pedro.mostrar_saldo()
+    cuenta_ana.girar(999999)
+    print(CuentaBancaria.es_monto_valido(-100))
+    print(CuentaBancaria.es_monto_valido(500))

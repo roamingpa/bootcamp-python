@@ -35,7 +35,7 @@ def agregar_item(nombre, cantidad, inventario):
         print(f"-- CANTIDAD A AGREGAR: {cantidad}")
     return inventario
 
-def quitar_item(nombre, cantidad, inventario: dict):    
+def quitar_item(nombre, cantidad, inventario):    
     cantidad_item_inventario = inventario.get(nombre, 0)
     if cantidad_item_inventario >= cantidad: 
         inventario[nombre] = cantidad_item_inventario - cantidad

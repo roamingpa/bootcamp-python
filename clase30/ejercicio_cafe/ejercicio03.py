@@ -75,6 +75,57 @@ Output esperado:
 
 # Escribe tu código aquí 👇
 
+class Cafe:
+    vida_util = 180  # atributo de clase
+
+    def __init__(self, variedad: int, formato: int):
+        self.variedad = variedad
+        self.formato = formato
+
+    @staticmethod
+    def info_variedad(variedad: int) -> tuple:
+        datos = {
+            1: (2, "Ideal para el despertar"),
+            2: (4, "Perfecto para la mañana"),
+            3: (8, "Refrescante en la tarde"),
+        }
+        return datos[variedad]
+
+    @staticmethod
+    def precio_por_formato(formato: int) -> int:
+        precios = {
+            1: 1500,
+            2: 2500,
+        }
+        return precios[formato]
+
+
+# Req 4
+c1 = Cafe(1, 1)
+c2 = Cafe(3, 2)
+tipo1 = type(c1)
+tipo2 = type(c2)
+print(tipo1)
+print(tipo2)
+if tipo1 == tipo2:
+    print("Ambos objetos son del mismo tipo")
+
+# Req 5
+nombres_variedad = {1: "Espresso", 2: "Cappuccino", 3: "Cold Brew"}
+
+variedad = int(input("\nvariedad ingresada: "))
+formato = int(input("formato ingresado:  "))
+
+cafe = Cafe(variedad, formato)
+tiempo, recomendacion = Cafe.info_variedad(variedad)
+precio = Cafe.precio_por_formato(formato)
+
+print(f"\nVariedad: {nombres_variedad[variedad]}")
+print(f"Formato: {formato}")
+print(f"Precio: ${precio}")
+print(f"Tiempo de preparación: {tiempo} minutos")
+print(f"Recomendación: {recomendacion}")
+
 
 
 

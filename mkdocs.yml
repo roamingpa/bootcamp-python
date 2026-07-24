@@ -1,0 +1,63 @@
+site_name: Python Bootcamp by Luis Correa
+site_description: Notas y guías técnicas del bootcamp de Python
+site_author: Luis Correa
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: es
+  - blog:
+      blog_toc: true
+      post_date_format: long
+      post_url_format: "{date}/{slug}"
+
+nav:
+  - Inicio: index.md
+  - Guías:
+    - Funciones: funciones.md
+    - Git: git.md
+    - POO: poo.md
+    - Características POO: poo_caracteristicas.md
+    - Web: web.md
+  - Blog: blog/index.md

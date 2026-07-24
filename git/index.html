@@ -1,0 +1,1398 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Notas y guías técnicas del bootcamp de Python">
+      
+      
+        <meta name="author" content="Luis Correa">
+      
+      
+        <link rel="canonical" href="https://roamingpa.github.io/bootcamp-python/git/">
+      
+      
+        <link rel="prev" href="../funciones/">
+      
+      
+        <link rel="next" href="../poo/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Git - Python Bootcamp by Luis Correa</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/print-site.css">
+    
+      <link rel="stylesheet" href="../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ayuda-memoria-git-para-principiantes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Python Bootcamp by Luis Correa" class="md-header__button md-logo" aria-label="Python Bootcamp by Luis Correa" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python Bootcamp by Luis Correa
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Git
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple" aria-label="Cambiar a modo oscuro" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="purple" aria-label="Cambiar a modo claro" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../funciones/" class="md-tabs__link">
+          
+  
+  
+  Guías
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../blog/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Blog
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../print_page/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Imprimir / Exportar
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Python Bootcamp by Luis Correa" class="md-nav__button md-logo" aria-label="Python Bootcamp by Luis Correa" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    Python Bootcamp by Luis Correa
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guías
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guías
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../funciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 Índice
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-que-es-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. ¿Qué es Git?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-configuracion-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Configuración inicial
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-crear-o-clonar-un-repositorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Crear o clonar un repositorio
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Crear o clonar un repositorio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-uno-nuevo-desde-cero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear uno nuevo desde cero
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clonar-uno-que-ya-existe-en-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clonar uno que ya existe en GitHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-el-ciclo-basico-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. El ciclo básico de trabajo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. El ciclo básico de trabajo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-add-marcar-archivos-para-guardar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        git add — marcar archivos para guardar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-commit-guardar-los-cambios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        git commit — guardar los cambios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-push-subir-a-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        git push — subir a GitHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ver-el-estado-y-el-historial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ver el estado y el historial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Ver el estado y el historial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-status-que-esta-pasando" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        git status — ¿qué está pasando?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-log-historial-de-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        git log — historial de commits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ramas-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Ramas (branches)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Ramas (branches)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fusionar-una-rama-con-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fusionar una rama con main
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-una-rama-cuando-ya-no-la-necesitas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eliminar una rama (cuando ya no la necesitas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-conectar-con-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Conectar con GitHub
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Conectar con GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ver-a-que-remoto-esta-conectado-tu-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ver a qué remoto está conectado tu repo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agregar-un-remoto-si-creaste-el-repo-local-primero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agregar un remoto (si creaste el repo local primero)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bajar-cambios-que-otros-subieron" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bajar cambios que otros subieron
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subir-una-rama-nueva-a-github-por-primera-vez" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subir una rama nueva a GitHub por primera vez
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-deshacer-cosas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Deshacer cosas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Deshacer cosas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sacar-un-archivo-del-staging-deshace-el-git-add" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sacar un archivo del staging (deshace el git add)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descartar-cambios-en-un-archivo-vuelve-al-ultimo-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descartar cambios en un archivo (vuelve al último commit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ver-que-cambio-en-un-archivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ver qué cambió en un archivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-errores-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Errores comunes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Errores comunes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nothing-to-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "nothing to commit"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rejected-non-fast-forward" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "rejected — non-fast-forward"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detached-head" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "detached HEAD"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commitee-en-la-rama-equivocada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Commiteé en la rama equivocada
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-resumen-rapido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Resumen rápido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Resumen rápido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-flujo-del-dia-a-dia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El flujo del día a día
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../poo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    POO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../poo_caracteristicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Características POO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Imprimir / Exportar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ayuda-memoria-git-para-principiantes">🌿 Ayuda Memoria — Git para Principiantes<a class="headerlink" href="#ayuda-memoria-git-para-principiantes" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>Guía rápida de los comandos de Git que más vas a usar. Sin complicaciones.</p>
+</blockquote>
+<hr>
+<h2 id="indice">📋 Índice<a class="headerlink" href="#indice" title="Permanent link">¶</a></h2>
+<ol>
+<li><a href="#1-qué-es-git">¿Qué es Git?</a></li>
+<li><a href="#2-configuración-inicial">Configuración inicial</a></li>
+<li><a href="#3-crear-o-clonar-un-repositorio">Crear o clonar un repositorio</a></li>
+<li><a href="#4-el-ciclo-básico-de-trabajo">El ciclo básico de trabajo</a></li>
+<li><a href="#5-ver-el-estado-y-el-historial">Ver el estado y el historial</a></li>
+<li><a href="#6-ramas-branches">Ramas (branches)</a></li>
+<li><a href="#7-conectar-con-github">Conectar con GitHub</a></li>
+<li><a href="#8-deshacer-cosas">Deshacer cosas</a></li>
+<li><a href="#9-errores-comunes">Errores comunes</a></li>
+<li><a href="#10-resumen-rápido">Resumen rápido</a></li>
+</ol>
+<hr>
+<h2 id="1-que-es-git">1. ¿Qué es Git?<a class="headerlink" href="#1-que-es-git" title="Permanent link">¶</a></h2>
+<p>Git es una herramienta que <strong>guarda el historial de cambios</strong> de tu código. Como tener una máquina del tiempo para tus archivos.</p>
+<ul>
+<li><strong>Git</strong> = la herramienta que corre en tu computador</li>
+<li><strong>GitHub</strong> = el sitio web donde subes tu código para guardarlo en la nube y compartirlo</li>
+</ul>
+<hr>
+<h2 id="2-configuracion-inicial">2. Configuración inicial<a class="headerlink" href="#2-configuracion-inicial" title="Permanent link">¶</a></h2>
+<p>Solo necesitas hacer esto una vez cuando instalas Git.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">"Tu Nombre"</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">"tu@email.com"</span>
+</span></code></pre></div>
+<blockquote>
+<p>💡 Para verificar que quedó bien:
+</p><div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email
+</span></code></pre></div><p></p>
+</blockquote>
+<hr>
+<h2 id="3-crear-o-clonar-un-repositorio">3. Crear o clonar un repositorio<a class="headerlink" href="#3-crear-o-clonar-un-repositorio" title="Permanent link">¶</a></h2>
+<h3 id="crear-uno-nuevo-desde-cero">Crear uno nuevo desde cero<a class="headerlink" href="#crear-uno-nuevo-desde-cero" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Primero entra a la carpeta de tu proyecto</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">cd</span><span class="w"> </span>mi-proyecto
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Inicializa Git ahí</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>git<span class="w"> </span>init
+</span></code></pre></div>
+<h3 id="clonar-uno-que-ya-existe-en-github">Clonar uno que ya existe en GitHub<a class="headerlink" href="#clonar-uno-que-ya-existe-en-github" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/usuario/repositorio.git
+</span></code></pre></div>
+<p>Esto descarga todo el proyecto a tu computador.</p>
+<hr>
+<h2 id="4-el-ciclo-basico-de-trabajo">4. El ciclo básico de trabajo<a class="headerlink" href="#4-el-ciclo-basico-de-trabajo" title="Permanent link">¶</a></h2>
+<p>Este es el flujo que vas a repetir todo el tiempo:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>1. Haces cambios en tus archivos
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>2. git add     → marcas qué cambios quieres guardar
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>3. git commit  → guardas esos cambios con un mensaje
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>4. git push    → subes los cambios a GitHub
+</span></code></pre></div>
+<h3 id="git-add-marcar-archivos-para-guardar">git add — marcar archivos para guardar<a class="headerlink" href="#git-add-marcar-archivos-para-guardar" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>add<span class="w"> </span>archivo.py<span class="w">              </span><span class="c1"># Agrega un archivo específico</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w">                       </span><span class="c1"># Agrega TODOS los archivos modificados</span>
+</span></code></pre></div>
+<h3 id="git-commit-guardar-los-cambios">git commit — guardar los cambios<a class="headerlink" href="#git-commit-guardar-los-cambios" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Agrega función de login"</span>
+</span></code></pre></div>
+<blockquote>
+<p>💡 El mensaje del commit debe describir <strong>qué hiciste</strong>, no cómo. Escríbelo como si completaras la frase "Este commit..."</p>
+</blockquote>
+<p><strong>Buenos mensajes:</strong>
+- <code>"Agrega validación de formulario"</code>
+- <code>"Corrige bug en el cálculo de descuento"</code>
+- <code>"Actualiza README con instrucciones de instalación"</code></p>
+<p><strong>Malos mensajes:</strong>
+- <code>"cambios"</code> ❌
+- <code>"asdfgh"</code> ❌
+- <code>"arreglé cosas"</code> ❌</p>
+<h3 id="git-push-subir-a-github">git push — subir a GitHub<a class="headerlink" href="#git-push-subir-a-github" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</span></code></pre></div>
+<hr>
+<h2 id="5-ver-el-estado-y-el-historial">5. Ver el estado y el historial<a class="headerlink" href="#5-ver-el-estado-y-el-historial" title="Permanent link">¶</a></h2>
+<h3 id="git-status-que-esta-pasando">git status — ¿qué está pasando?<a class="headerlink" href="#git-status-que-esta-pasando" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git<span class="w"> </span>status
+</span></code></pre></div>
+<p>Te muestra qué archivos cambiaste, cuáles están listos para commit y cuáles no.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Changes to be committed:    → listos para commit (ya hiciste git add)
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>Changes not staged:         → modificados pero sin git add todavía
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>Untracked files:            → archivos nuevos que Git no conoce aún
+</span></code></pre></div>
+<h3 id="git-log-historial-de-commits">git log — historial de commits<a class="headerlink" href="#git-log-historial-de-commits" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>git<span class="w"> </span>log<span class="w">                     </span><span class="c1"># Historial completo</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w">           </span><span class="c1"># Versión resumida (más útil)</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>a3f1c2d Agrega validación de formulario
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>b8e9f01 Corrige bug en login
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>c12d3e4 Primer commit
+</span></code></pre></div>
+<hr>
+<h2 id="6-ramas-branches">6. Ramas (branches)<a class="headerlink" href="#6-ramas-branches" title="Permanent link">¶</a></h2>
+<p>Una rama es como una <strong>copia paralela</strong> de tu proyecto. Útil para trabajar en algo nuevo sin romper lo que ya funciona.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>git<span class="w"> </span>branch<span class="w">                      </span><span class="c1"># Ver en qué rama estás</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>git<span class="w"> </span>branch<span class="w"> </span>nombre-rama<span class="w">          </span><span class="c1"># Crear una rama nueva</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>git<span class="w"> </span>checkout<span class="w"> </span>nombre-rama<span class="w">        </span><span class="c1"># Cambiar a esa rama</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>nombre-rama<span class="w">     </span><span class="c1"># Crear Y cambiar en un solo comando</span>
+</span></code></pre></div>
+<h3 id="fusionar-una-rama-con-main">Fusionar una rama con main<a class="headerlink" href="#fusionar-una-rama-con-main" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>main<span class="w">               </span><span class="c1"># Primero vuelves a main</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>git<span class="w"> </span>merge<span class="w"> </span>nombre-rama<span class="w">           </span><span class="c1"># Luego fusionas</span>
+</span></code></pre></div>
+<h3 id="eliminar-una-rama-cuando-ya-no-la-necesitas">Eliminar una rama (cuando ya no la necesitas)<a class="headerlink" href="#eliminar-una-rama-cuando-ya-no-la-necesitas" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>git<span class="w"> </span>branch<span class="w"> </span>-d<span class="w"> </span>nombre-rama
+</span></code></pre></div>
+<blockquote>
+<p>💡 Flujo típico: creas una rama para cada feature o fix → trabajas ahí → haces merge a main cuando está listo.</p>
+</blockquote>
+<hr>
+<h2 id="7-conectar-con-github">7. Conectar con GitHub<a class="headerlink" href="#7-conectar-con-github" title="Permanent link">¶</a></h2>
+<h3 id="ver-a-que-remoto-esta-conectado-tu-repo">Ver a qué remoto está conectado tu repo<a class="headerlink" href="#ver-a-que-remoto-esta-conectado-tu-repo" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>git<span class="w"> </span>remote<span class="w"> </span>-v
+</span></code></pre></div>
+<h3 id="agregar-un-remoto-si-creaste-el-repo-local-primero">Agregar un remoto (si creaste el repo local primero)<a class="headerlink" href="#agregar-un-remoto-si-creaste-el-repo-local-primero" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/usuario/repositorio.git
+</span></code></pre></div>
+<h3 id="bajar-cambios-que-otros-subieron">Bajar cambios que otros subieron<a class="headerlink" href="#bajar-cambios-que-otros-subieron" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
+</span></code></pre></div>
+<blockquote>
+<p>⚠️ Antes de empezar a trabajar cada día, haz <code>git pull</code> para tener la versión más reciente.</p>
+</blockquote>
+<h3 id="subir-una-rama-nueva-a-github-por-primera-vez">Subir una rama nueva a GitHub por primera vez<a class="headerlink" href="#subir-una-rama-nueva-a-github-por-primera-vez" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>nombre-rama
+</span></code></pre></div>
+<hr>
+<h2 id="8-deshacer-cosas">8. Deshacer cosas<a class="headerlink" href="#8-deshacer-cosas" title="Permanent link">¶</a></h2>
+<h3 id="sacar-un-archivo-del-staging-deshace-el-git-add">Sacar un archivo del staging (deshace el git add)<a class="headerlink" href="#sacar-un-archivo-del-staging-deshace-el-git-add" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>git<span class="w"> </span>restore<span class="w"> </span>--staged<span class="w"> </span>archivo.py
+</span></code></pre></div>
+<h3 id="descartar-cambios-en-un-archivo-vuelve-al-ultimo-commit">Descartar cambios en un archivo (vuelve al último commit)<a class="headerlink" href="#descartar-cambios-en-un-archivo-vuelve-al-ultimo-commit" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>git<span class="w"> </span>restore<span class="w"> </span>archivo.py
+</span></code></pre></div>
+<blockquote>
+<p>⚠️ Esto <strong>borra</strong> los cambios que no guardaste. No se puede recuperar.</p>
+</blockquote>
+<h3 id="ver-que-cambio-en-un-archivo">Ver qué cambió en un archivo<a class="headerlink" href="#ver-que-cambio-en-un-archivo" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>git<span class="w"> </span>diff<span class="w"> </span>archivo.py
+</span></code></pre></div>
+<hr>
+<h2 id="9-errores-comunes">9. Errores comunes<a class="headerlink" href="#9-errores-comunes" title="Permanent link">¶</a></h2>
+<h3 id="nothing-to-commit">"nothing to commit"<a class="headerlink" href="#nothing-to-commit" title="Permanent link">¶</a></h3>
+<p>No hiciste cambios, o olvidaste el <code>git add</code>.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>git<span class="w"> </span>status<span class="w">    </span><span class="c1"># Revisa qué está pasando</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w">     </span><span class="c1"># Si tienes cambios sin agregar</span>
+</span></code></pre></div>
+<h3 id="rejected-non-fast-forward">"rejected — non-fast-forward"<a class="headerlink" href="#rejected-non-fast-forward" title="Permanent link">¶</a></h3>
+<p>Alguien subió cambios antes que tú. Primero baja los cambios:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="c1"># Resuelve conflictos si los hay, luego:</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</span></code></pre></div>
+<h3 id="detached-head">"detached HEAD"<a class="headerlink" href="#detached-head" title="Permanent link">¶</a></h3>
+<p>Estás en un commit antiguo sin estar en ninguna rama. Vuelve a main:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>main
+</span></code></pre></div>
+<h3 id="commitee-en-la-rama-equivocada">Commiteé en la rama equivocada<a class="headerlink" href="#commitee-en-la-rama-equivocada" title="Permanent link">¶</a></h3>
+<p>Si el commit es reciente y no lo subiste aún, puedes moverlo:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>la-rama-correcta
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>git<span class="w"> </span>cherry-pick<span class="w"> </span>&lt;id-del-commit&gt;<span class="w">   </span><span class="c1"># copia el commit aquí</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>git<span class="w"> </span>checkout<span class="w"> </span>main
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>HEAD~1<span class="w">           </span><span class="c1"># borra el commit de main</span>
+</span></code></pre></div>
+<hr>
+<h2 id="10-resumen-rapido">10. Resumen rápido<a class="headerlink" href="#10-resumen-rapido" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>¿Qué hace?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git init</code></td>
+<td>Crea un repositorio nuevo</td>
+</tr>
+<tr>
+<td><code>git clone &lt;url&gt;</code></td>
+<td>Descarga un repositorio de GitHub</td>
+</tr>
+<tr>
+<td><code>git status</code></td>
+<td>Muestra el estado actual</td>
+</tr>
+<tr>
+<td><code>git add .</code></td>
+<td>Marca todos los cambios para guardar</td>
+</tr>
+<tr>
+<td><code>git commit -m "msg"</code></td>
+<td>Guarda los cambios con un mensaje</td>
+</tr>
+<tr>
+<td><code>git push origin main</code></td>
+<td>Sube los cambios a GitHub</td>
+</tr>
+<tr>
+<td><code>git pull origin main</code></td>
+<td>Baja los cambios desde GitHub</td>
+</tr>
+<tr>
+<td><code>git log --oneline</code></td>
+<td>Muestra el historial resumido</td>
+</tr>
+<tr>
+<td><code>git branch nombre</code></td>
+<td>Crea una rama nueva</td>
+</tr>
+<tr>
+<td><code>git checkout nombre</code></td>
+<td>Cambia de rama</td>
+</tr>
+<tr>
+<td><code>git merge nombre</code></td>
+<td>Fusiona una rama con la actual</td>
+</tr>
+<tr>
+<td><code>git diff</code></td>
+<td>Muestra qué cambió</td>
+</tr>
+<tr>
+<td><code>git restore archivo</code></td>
+<td>Deshace cambios en un archivo</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="el-flujo-del-dia-a-dia">El flujo del día a día<a class="headerlink" href="#el-flujo-del-dia-a-dia" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main<span class="w">          </span><span class="c1"># 1. Baja lo último</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="c1"># ... haces tus cambios ...</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w">                     </span><span class="c1"># 2. Marcas los cambios</span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"descripción"</span><span class="w">   </span><span class="c1"># 3. Guardas</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main<span class="w">          </span><span class="c1"># 4. Subes</span>
+</span></code></pre></div>
+<hr>
+<p><em>Git al principio puede parecer complicado, pero con práctica se vuelve automático. ¡Tú puedes, po!</em> 🚀</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../js/print-site.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

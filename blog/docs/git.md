@@ -71,6 +71,16 @@ Esto descarga todo el proyecto a tu computador.
 
 Este es el flujo que vas a repetir todo el tiempo:
 
+```mermaid
+graph LR
+    A[📝 Editar archivos] --> B[git add]
+    B --> C[git commit]
+    C --> D[git push]
+    D --> E[☁️ GitHub]
+    style A fill:#1e1e1e,color:#9cdcfe
+    style E fill:#1e1e1e,color:#4ec9b0
+```
+
 ```
 1. Haces cambios en tus archivos
 2. git add     → marcas qué cambios quieres guardar

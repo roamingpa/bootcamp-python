@@ -149,6 +149,26 @@ print(calc.valor)  # 15
 
 Permite crear una clase **nueva basada en una existente**, reutilizando su código.
 
+```mermaid
+classDiagram
+    class Animal {
+        +nombre: str
+        +comer()
+    }
+    class Perro {
+        +ladrar()
+    }
+    class Gato {
+        +maullar()
+    }
+    class Labrador {
+        +raza: str
+    }
+    Animal <|-- Perro : hereda
+    Animal <|-- Gato : hereda
+    Perro <|-- Labrador : hereda
+```
+
 ```python
 # Clase padre (base)
 class Animal:

@@ -3,6 +3,9 @@ site_description: Notas y guías técnicas del bootcamp de Python
 site_author: Luis Correa
 site_url: https://roamingpa.github.io/bootcamp-python/
 
+extra_css:
+  - stylesheets/extra.css
+
 theme:
   name: material
   palette:
@@ -35,7 +38,11 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - admonition
@@ -64,10 +71,15 @@ plugins:
 
 nav:
   - Inicio: index.md
-  - Guías:
+  - Python Principiante:
+    - Fundamentos del lenguaje: fundamentos.md
+    - Manejo de Archivos: archivos.md
+    - Excepciones: excepciones.md
+  - Python Avanzado:
     - Funciones: funciones.md
-    - Git: git.md
-    - POO: poo.md
-    - Características POO: poo_caracteristicas.md
-    - Web: web.md
+    - POO — Clases y Objetos: poo.md
+    - POO — Características: poo_caracteristicas.md
+  - Tecnologías Web: web.md
+  - Herramientas:
+    - Git y GitHub: git.md
   - Blog: blog/index.md

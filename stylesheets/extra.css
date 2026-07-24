@@ -1,0 +1,141 @@
+/* ============================================================
+   VS Code Dark+ — Tema de colores para bloques de código
+   ============================================================ */
+
+/* Fondo base y color de texto de código */
+:root {
+  --md-code-bg-color: #1e1e1e;
+  --md-code-fg-color: #d4d4d4;
+  --md-code-hl-color: rgba(38, 79, 120, 0.5);
+}
+
+/* Palabras clave: if, for, def, class, return, import ... */
+.highlight .k,
+.highlight .kn,
+.highlight .kd,
+.highlight .kr,
+.highlight .kc {
+  color: #569cd6;
+}
+
+/* Cadenas de texto */
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .dl {
+  color: #ce9178;
+}
+
+/* Comentarios */
+.highlight .c,
+.highlight .c1,
+.highlight .cm,
+.highlight .cs,
+.highlight .cp {
+  color: #6a9955;
+  font-style: italic;
+}
+
+/* Nombres de funciones */
+.highlight .nf {
+  color: #dcdcaa;
+}
+
+/* Built-ins: print, len, range, int, str ... */
+.highlight .nb {
+  color: #dcdcaa;
+}
+
+/* Nombres de clases */
+.highlight .nc {
+  color: #4ec9b0;
+}
+
+/* Variables e identificadores */
+.highlight .n,
+.highlight .na {
+  color: #9cdcfe;
+}
+
+/* Números */
+.highlight .mi,
+.highlight .mf,
+.highlight .mh,
+.highlight .mo {
+  color: #b5cea8;
+}
+
+/* Operadores y puntuación */
+.highlight .o,
+.highlight .ow,
+.highlight .p {
+  color: #d4d4d4;
+}
+
+/* Decoradores (@property, @staticmethod ...) */
+.highlight .nd {
+  color: #c586c0;
+}
+
+/* self */
+.highlight .bp {
+  color: #9cdcfe;
+}
+
+/* ============================================================
+   Terminal / Shell — Aspecto de terminal integrada de VS Code
+   ============================================================ */
+
+.language-bash .highlight pre,
+.language-shell .highlight pre,
+.language-powershell .highlight pre {
+  background-color: #0c0c0c;
+  border-left: 3px solid #4ec9b0;
+}
+
+/* Prompt del shell ($ o PS>) */
+.highlight .gp {
+  color: #4ec9b0;
+  user-select: none;
+}
+
+/* Output de comandos */
+.highlight .go {
+  color: #858585;
+}
+
+/* ============================================================
+   Contenedor de código — estilo ventana VS Code
+   ============================================================ */
+
+.md-typeset .highlight pre {
+  border-radius: 6px;
+  border-top: 2px solid #3c3c3c;
+}
+
+/* Botón de copiar — mejor visibilidad */
+.md-typeset .highlight:hover .md-code__button {
+  opacity: 1;
+}
+
+/* ============================================================
+   Bloques de advertencia — refuerzo visual para aprendizaje
+   ============================================================ */
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-left-color: #4ec9b0;
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-left-color: #ce9178;
+}
+
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-left-color: #f44747;
+}

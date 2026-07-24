@@ -1,0 +1,30 @@
+name: Deploy Blog a GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "blog/**"
+      - ".github/workflows/deploy.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Instalar dependencias
+        run: pip install mkdocs-material mkdocs-print-site-plugin mkdocs-glightbox
+
+      - name: Deploy a gh-pages
+        run: cd blog && mkdocs gh-deploy --force

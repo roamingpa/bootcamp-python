@@ -6,8 +6,11 @@ Repositorio con ejercicios, apuntes y guías técnicas del bootcamp de Python.
 
 ```
 clases/        → Ejercicios por clase (clase15 – clase36)
+blog/          → Sitio web estático (MkDocs)
+  docs/        → Fuente: guías .md + posts del blog
+  site/        → Output generado (no commitear)
+  mkdocs.yml   → Configuración del sitio
 contenido/     → Material del curso (slides, apuntes por semana)
-docs/          → Guías y blog (fuente del sitio web estático)
 excalidraw/    → Diagramas
 ```
 
@@ -17,8 +20,8 @@ Las guías y el cheatsheet completo están en el sitio estático generado con Mk
 
 ```bash
 # Preview local
-mkdocs serve
+cd blog && mkdocs serve
 
-# Generar sitio estático en site/
-mkdocs build
+# Generar sitio estático en blog/site/
+cd blog && mkdocs build
 ```

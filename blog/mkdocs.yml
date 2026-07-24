@@ -1,6 +1,7 @@
 site_name: Python Bootcamp by Luis Correa
 site_description: Notas y guías técnicas del bootcamp de Python
 site_author: Luis Correa
+site_url: https://roamingpa.github.io/bootcamp-python/
 
 theme:
   name: material
@@ -51,6 +52,15 @@ plugins:
       blog_toc: true
       post_date_format: long
       post_url_format: "{date}/{slug}"
+  - glightbox:           # zoom en imágenes al hacer click
+      touchNavigation: true
+      loop: false
+  - print-site:          # página /print_page con todo el sitio unificado para imprimir
+      add_to_navigation: true
+      print_page_title: "Imprimir / Exportar"
+      add_full_urls: false
+      enumerate_headings: false
+      add_table_of_contents: true
 
 nav:
   - Inicio: index.md

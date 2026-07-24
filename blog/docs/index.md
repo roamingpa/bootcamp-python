@@ -1,45 +1,60 @@
-﻿# 🐍 Python Bootcamp
+# Python Bootcamp
 
-Bienvenido al sitio de apuntes del bootcamp de Python.
-Acá encontrarás guías, referencias y ejemplos listos para usar.
+Sitio de materiales del bootcamp de Python — guías, referencias y ejercicios para el aula.
 
 ---
 
-## ¿Por dónde empezar?
+## Contenidos del curso
 
 <div class="grid cards" markdown>
 
--   :material-school: **Python Principiante**
+-   :fontawesome-brands-html5: **Tecnologías Web**
 
     ---
 
-    Variables, listas, bucles, funciones y los fundamentos del lenguaje.
+    HTML, CSS, JavaScript, jQuery y Bootstrap. El punto de partida visual del curso.
 
-    [:octicons-arrow-right-24: Ver guías](fundamentos.md)
+    [Ver módulo](web.md)
 
--   :material-lightning-bolt: **Python Avanzado**
-
-    ---
-
-    Funciones de alto orden, POO, herencia, encapsulamiento y más.
-
-    [:octicons-arrow-right-24: Ver guías](funciones.md)
-
--   :material-web: **Tecnologías Web**
+-   :material-console: **Terminal y Herramientas**
 
     ---
 
-    HTML, CSS, JavaScript, jQuery y Bootstrap para construir páginas web.
+    Uso de la terminal, comandos esenciales, Git y GitHub para versionar proyectos.
 
-    [:octicons-arrow-right-24: Ver guía](web.md)
+    [Ver módulo](terminal.md)
 
--   :material-git: **Herramientas del desarrollador**
+-   :material-language-python: **Python Principiante**
 
     ---
 
-    Git y GitHub para versionar tu código y colaborar con otros.
+    Variables, listas, bucles, archivos y manejo de errores.
 
-    [:octicons-arrow-right-24: Ver guía](git.md)
+    [Ver módulo](fundamentos.md)
+
+-   :material-code-braces: **Python Avanzado**
+
+    ---
+
+    Funciones de alto orden, POO, herencia y encapsulamiento.
+
+    [Ver módulo](funciones.md)
+
+-   :material-database: **Bases de Datos**
+
+    ---
+
+    SQL, SQLite y conexión con Python. Próximamente disponible.
+
+    [Ver módulo](bases-de-datos.md)
+
+-   :material-book-open-variant: **Recursos para el Docente**
+
+    ---
+
+    Plugins, herramientas y configuraciones útiles para preparar clases.
+
+    [Ver recursos](recursos.md)
 
 </div>
 
@@ -49,40 +64,12 @@ Acá encontrarás guías, referencias y ejemplos listos para usar.
 
 ```mermaid
 graph LR
-    A[Python Principiante] --> B[Python Avanzado]
-    B --> C[Tecnologias Web]
-    A --> D[Git y GitHub]
-    C --> E[Proyectos]
-    B --> E
+    A[Tecnologias Web] --> B[Terminal y Git]
+    B --> C[Python Principiante]
+    C --> D[Python Avanzado]
+    D --> E[Bases de Datos]
+    C --> E
+    style E fill:#3c3c3c,color:#858585
 ```
 
----
-
-> 💡 Usá la barra de búsqueda o presioná ++s++ para encontrar cualquier tema rápidamente.
-
--   :material-git: **Herramientas del desarrollador**
-
-    ---
-
-    Git y GitHub para versionar tu código y colaborar con otros.
-
-    [:octicons-arrow-right-24: Ver guía](git.md)
-
-</div>
-
----
-
-## Ruta de aprendizaje
-
-```mermaid
-graph LR
-    A[Python Principiante] --> B[Python Avanzado]
-    B --> C[Tecnologias Web]
-    A --> D[Git y GitHub]
-    C --> E[Proyectos]
-    B --> E
-```
-
----
-
-> Usa la barra de busqueda o presiona ++s++ para encontrar cualquier tema rapidamente.
+> Usá la barra de búsqueda o presioná ++s++ para encontrar cualquier tema rápidamente.

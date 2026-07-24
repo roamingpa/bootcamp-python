@@ -23,6 +23,22 @@
 Una clase **hija** reutiliza atributos y métodos de una clase **padre**.  
 Relación: *"es un"* → un `Perro` **es un** `Animal`.
 
+```mermaid
+classDiagram
+    class Animal {
+        +nombre: str
+        +respirar()
+    }
+    class Perro {
+        +ladrar()
+    }
+    class Gato {
+        +maullar()
+    }
+    Animal <|-- Perro : es un
+    Animal <|-- Gato : es un
+```
+
 ```python
 class Animal:
     def __init__(self, nombre):
@@ -66,6 +82,18 @@ print(fido.nombre, fido.raza)  # Fido Labrador
 
 Ocultar los detalles internos de un objeto y controlar el acceso a sus datos.  
 Relación: *"los datos son míos, accede por mis métodos"*.
+
+```mermaid
+classDiagram
+    class CuentaBancaria {
+        +titular: str
+        #_saldo: float
+        -__pin: str
+        +get_saldo()
+        +depositar(monto)
+    }
+    note for CuentaBancaria "+ público: acceso libre\n# protegido: solo subclases\n- privado: solo la clase"
+```
 
 | Convención | Acceso | Ejemplo |
 |-----------|--------|---------|
@@ -131,6 +159,29 @@ Definir una **interfaz común** sin implementar los detalles.
 Obliga a las clases hijas a implementar ciertos métodos.  
 Se logra con el módulo `abc` (Abstract Base Classes).
 
+```mermaid
+classDiagram
+    class Figura {
+        <<abstract>>
+        +area()*
+        +perimetro()*
+        +describir()
+    }
+    class Rectangulo {
+        +ancho: float
+        +alto: float
+        +area()
+        +perimetro()
+    }
+    class Circulo {
+        +radio: float
+        +area()
+        +perimetro()
+    }
+    Figura <|-- Rectangulo
+    Figura <|-- Circulo
+```
+
 ```python
 from abc import ABC, abstractmethod
 
@@ -179,6 +230,16 @@ r.describir()   # Área: 20 | Perímetro: 18
 
 El **mismo método** se comporta distinto según el objeto que lo llame.  
 Relación: *"misma interfaz, distinto comportamiento"*.
+
+```mermaid
+flowchart LR
+    F["hacer_hablar(animal)"] --> P[Perro]
+    F --> G[Gato]
+    F --> D[Pato]
+    P --> R1["¡Guau!"]
+    G --> R2["¡Miau!"]
+    D --> R3["¡Cuac!"]
+```
 
 ```python
 class Perro:
@@ -232,6 +293,19 @@ Un objeto **contiene** a otro objeto como parte de sí mismo.
 Si el contenedor se elimina, el contenido también desaparece.  
 Relación: *"tiene un"* (dependiente) → un `Auto` **tiene un** `Motor`.
 
+```mermaid
+classDiagram
+    class Auto {
+        +marca: str
+        +arrancar()
+    }
+    class Motor {
+        +cilindros: int
+        +encender()
+    }
+    Auto *-- Motor : crea y posee
+```
+
 ```python
 class Motor:
     def __init__(self, cilindros):
@@ -264,6 +338,20 @@ auto.arrancar()
 Un objeto **contiene una referencia** a otro, pero ambos pueden existir por separado.  
 Si el contenedor se elimina, el contenido **sigue existiendo**.  
 Relación: *"tiene un"* (independiente) → un `Departamento` **tiene** `Empleados`.
+
+```mermaid
+classDiagram
+    class Departamento {
+        +nombre: str
+        +empleados: list
+        +agregar(empleado)
+        +listar()
+    }
+    class Empleado {
+        +nombre: str
+    }
+    Departamento o-- Empleado : referencia (independientes)
+```
 
 ```python
 class Empleado:
@@ -306,6 +394,16 @@ Dos objetos **interactúan entre sí** llamándose mutuamente sus métodos.
 No hay jerarquía ni contención — simplemente trabajan juntos.  
 Relación: *"usa a"* → un `Cajero` **usa a** un `Producto` para calcular el total.
 
+```mermaid
+sequenceDiagram
+    participant Cajero
+    participant Producto
+    Cajero->>Producto: accede a p.precio
+    Producto-->>Cajero: devuelve precio
+    Cajero->>Cajero: total += precio
+    Cajero->>Cajero: imprime total
+```
+
 ```python
 class Producto:
     def __init__(self, nombre, precio):
@@ -339,6 +437,21 @@ cajero.cobrar(carrito)
 ## 8. Herencia múltiple
 
 Una clase puede heredar de **más de una clase padre**.
+
+```mermaid
+classDiagram
+    class Volador {
+        +volar()
+    }
+    class Nadador {
+        +nadar()
+    }
+    class Pato {
+        +hablar()
+    }
+    Volador <|-- Pato : hereda
+    Nadador <|-- Pato : hereda
+```
 
 ```python
 class Volador:

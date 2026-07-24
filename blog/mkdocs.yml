@@ -51,6 +51,9 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search:
@@ -71,6 +74,10 @@ plugins:
 
 nav:
   - Inicio: index.md
+  - Tecnologías Web: web.md
+  - Terminal y Herramientas:
+    - La Terminal: terminal.md
+    - Git y GitHub: git.md
   - Python Principiante:
     - Fundamentos del lenguaje: fundamentos.md
     - Manejo de Archivos: archivos.md
@@ -79,7 +86,6 @@ nav:
     - Funciones: funciones.md
     - POO — Clases y Objetos: poo.md
     - POO — Características: poo_caracteristicas.md
-  - Tecnologías Web: web.md
-  - Herramientas:
-    - Git y GitHub: git.md
+  - Bases de Datos: bases-de-datos.md
+  - Recursos para el Docente: recursos.md
   - Blog: blog/index.md

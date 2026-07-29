@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bases-de-datos" class="md-skip">
+        <a href="#bases-de-datos-postgresql" class="md-skip">
           Skip to content
         </a>
       
@@ -955,10 +955,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#que-vamos-a-ver" class="md-nav__link">
+  <a href="#el-mapa-del-territorio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ¿Qué vamos a ver?
+        El mapa del territorio
       
     </span>
   </a>
@@ -966,10 +966,381 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#temas-planificados" class="md-nav__link">
+  <a href="#psql-la-consola-interactiva" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Temas planificados
+        psql — La consola interactiva
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="psql — La consola interactiva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conectarse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conectarse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comandos-meta-empiezan-con" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comandos meta (empiezan con \)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historial-y-shortcuts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Historial y shortcuts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ddl-definicion-de-estructura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DDL — Definición de estructura
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DDL — Definición de estructura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bases-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bases de datos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tablas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tablas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificar-tablas-alter-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modificar tablas (ALTER TABLE)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-datos-frecuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de datos frecuentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dml-manipulacion-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DML — Manipulación de datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DML — Manipulación de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        INSERT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-anatomia-completa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SELECT — Anatomía completa
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SELECT — Anatomía completa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orden-de-escritura-vs-orden-de-ejecucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Orden de escritura vs orden de ejecución
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cada-clausula-explicada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cada cláusula explicada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-query-mas-completa-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La query más completa — paso a paso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtros-en-where-operadores-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtros en WHERE — operadores disponibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funciones-de-agregacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funciones de agregación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queries-basicas-de-select" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Queries básicas de SELECT
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UPDATE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DELETE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#joins-combinar-tablas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JOINs — Combinar tablas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Índices
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consultas-utiles-del-dia-a-dia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consultas útiles del día a día
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consultas útiles del día a día">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funciones-de-texto-y-fecha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funciones de texto y fecha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-logica-condicional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CASE — lógica condicional
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coalesce-manejar-nulls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        COALESCE — manejar NULLs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ctes-with-subconsultas-nombradas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CTEs — WITH (subconsultas nombradas)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subconsultas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subconsultas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queries-de-diagnostico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Queries de diagnóstico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transactions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roles-y-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roles y permisos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importar-exportar-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importar / Exportar datos
       
     </span>
   </a>
@@ -1084,33 +1455,1075 @@
 
 
 
-<h1 id="bases-de-datos"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4"></path></svg></span> Bases de Datos<a class="headerlink" href="#bases-de-datos" title="Permanent link">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Próximamente</p>
-<p>Este módulo está en preparación. Estará disponible pronto.</p>
+<h1 id="bases-de-datos-postgresql"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4"></path></svg></span> Bases de Datos — PostgreSQL<a class="headerlink" href="#bases-de-datos-postgresql" title="Permanent link">¶</a></h1>
+<p>Cheatsheet de referencia rápida para trabajar con <strong>PostgreSQL</strong>: la consola <code>psql</code>, comandos DDL/DML, y las queries más usadas en el día a día.</p>
+<hr>
+<h2 id="el-mapa-del-territorio">El mapa del territorio<a class="headerlink" href="#el-mapa-del-territorio" title="Permanent link">¶</a></h2>
+<p>SQL se divide en tres grandes grupos de comandos:</p>
+<pre class="mermaid"><code>mindmap
+  root((SQL))
+    DDL
+      CREATE
+      ALTER
+      DROP
+      TRUNCATE
+    DML
+      SELECT
+      INSERT
+      UPDATE
+      DELETE
+    DCL
+      GRANT
+      REVOKE</code></pre>
+<table>
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Nombre completo</th>
+<th>Para qué sirve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DDL</strong></td>
+<td>Data Definition Language</td>
+<td>Definir la <em>estructura</em>: crear tablas, columnas, índices</td>
+</tr>
+<tr>
+<td><strong>DML</strong></td>
+<td>Data Manipulation Language</td>
+<td>Manipular los <em>datos</em>: leer, insertar, modificar, eliminar</td>
+</tr>
+<tr>
+<td><strong>DCL</strong></td>
+<td>Data Control Language</td>
+<td>Controlar el <em>acceso</em>: permisos y roles de usuario</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="psql-la-consola-interactiva">psql — La consola interactiva<a class="headerlink" href="#psql-la-consola-interactiva" title="Permanent link">¶</a></h2>
+<p><code>psql</code> es el cliente de línea de comandos oficial de PostgreSQL. Es una shell interactiva: escribís una query, presionás Enter, PostgreSQL la ejecuta y devuelve el resultado.</p>
+<pre class="mermaid"><code>flowchart LR
+    terminal["Terminal / CMD"] --&gt;|psql -U postgres -d mi_base| psql["psql\n(cliente)"]
+    psql &lt;--&gt;|"TCP / socket"| server["PostgreSQL Server\n:5432"]
+    server --- db[("mi_base")]</code></pre>
+<h3 id="conectarse">Conectarse<a class="headerlink" href="#conectarse" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Conectarse a una base de datos local con un usuario</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>psql<span class="w"> </span>-U<span class="w"> </span>postgres
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Conectarse a una base de datos específica</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>mi_base
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Conectarse a un servidor remoto</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>psql<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-p<span class="w"> </span><span class="m">5432</span><span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>mi_base
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Con URL de conexión</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>psql<span class="w"> </span>postgresql://usuario:password@localhost:5432/mi_base
+</span></code></pre></div>
+<h3 id="comandos-meta-empiezan-con">Comandos meta (empiezan con <code>\</code>)<a class="headerlink" href="#comandos-meta-empiezan-con" title="Permanent link">¶</a></h3>
+<p>Los comandos que empiezan con <code>\</code> no son SQL puro: son atajos del cliente <code>psql</code> para inspeccionar la base de datos sin escribir queries largas.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\l</code></td>
+<td>Listar todas las bases de datos</td>
+</tr>
+<tr>
+<td><code>\c nombre_db</code></td>
+<td>Conectarse a otra base de datos</td>
+</tr>
+<tr>
+<td><code>\dt</code></td>
+<td>Listar tablas del schema actual</td>
+</tr>
+<tr>
+<td><code>\dt schema.*</code></td>
+<td>Listar tablas de un schema específico</td>
+</tr>
+<tr>
+<td><code>\d nombre_tabla</code></td>
+<td>Describir estructura de una tabla (columnas, tipos, restricciones)</td>
+</tr>
+<tr>
+<td><code>\d+ nombre_tabla</code></td>
+<td>Descripción detallada (incluye tamaños y comentarios)</td>
+</tr>
+<tr>
+<td><code>\dn</code></td>
+<td>Listar schemas</td>
+</tr>
+<tr>
+<td><code>\du</code></td>
+<td>Listar roles y usuarios</td>
+</tr>
+<tr>
+<td><code>\df</code></td>
+<td>Listar funciones definidas</td>
+</tr>
+<tr>
+<td><code>\dv</code></td>
+<td>Listar vistas</td>
+</tr>
+<tr>
+<td><code>\di</code></td>
+<td>Listar índices</td>
+</tr>
+<tr>
+<td><code>\timing</code></td>
+<td>Activar/desactivar tiempo de ejecución de cada query</td>
+</tr>
+<tr>
+<td><code>\x</code></td>
+<td>Activar/desactivar salida expandida (cada columna en su propia línea)</td>
+</tr>
+<tr>
+<td><code>\e</code></td>
+<td>Abrir el editor de sistema ($EDITOR) para escribir la query</td>
+</tr>
+<tr>
+<td><code>\i archivo.sql</code></td>
+<td>Ejecutar un archivo SQL externo</td>
+</tr>
+<tr>
+<td><code>\o archivo.txt</code></td>
+<td>Redirigir todo el output hacia un archivo</td>
+</tr>
+<tr>
+<td><code>\copy</code></td>
+<td>Importar/exportar datos en formato CSV</td>
+</tr>
+<tr>
+<td><code>\q</code></td>
+<td>Salir de psql</td>
+</tr>
+<tr>
+<td><code>\?</code></td>
+<td>Mostrar ayuda sobre todos los comandos meta</td>
+</tr>
+<tr>
+<td><code>\h SELECT</code></td>
+<td>Mostrar ayuda de sintaxis de un comando SQL específico</td>
+</tr>
+</tbody>
+</table>
+<h3 id="historial-y-shortcuts">Historial y shortcuts<a class="headerlink" href="#historial-y-shortcuts" title="Permanent link">¶</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Navegar historial: flecha arriba/abajo</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># Buscar en historial: Ctrl+R</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># Limpiar línea: Ctrl+C</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Salir: \q  o  Ctrl+D</span>
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Modo expandido</p>
+<p>Usá <code>\x</code> para activar el modo expandido cuando una tabla tiene muchas columnas. Cada fila se muestra verticalmente, más fácil de leer.</p>
 </div>
 <hr>
-<h2 id="que-vamos-a-ver">¿Qué vamos a ver?<a class="headerlink" href="#que-vamos-a-ver" title="Permanent link">¶</a></h2>
-<pre class="mermaid"><code>graph LR
-    A[SQL Básico] --&gt; B[SQLite con Python]
-    B --&gt; C[CRUD completo]
-    C --&gt; D[ORM con SQLAlchemy]
-    style A fill:#3c3c3c,color:#858585
-    style B fill:#3c3c3c,color:#858585
-    style C fill:#3c3c3c,color:#858585
-    style D fill:#3c3c3c,color:#858585</code></pre>
-<h2 id="temas-planificados">Temas planificados<a class="headerlink" href="#temas-planificados" title="Permanent link">¶</a></h2>
-<ul>
-<li>[ ] ¿Qué es una base de datos relacional?</li>
-<li>[ ] SQL: <code>SELECT</code>, <code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code></li>
-<li>[ ] Crear y consultar tablas con SQLite</li>
-<li>[ ] Conectar Python con SQLite (<code>sqlite3</code>)</li>
-<li>[ ] CRUD completo desde Python</li>
-<li>[ ] Introducción a SQLAlchemy (ORM)</li>
-<li>[ ] Ejercicios prácticos</li>
-</ul>
+<h2 id="ddl-definicion-de-estructura">DDL — Definición de estructura<a class="headerlink" href="#ddl-definicion-de-estructura" title="Permanent link">¶</a></h2>
+<p>DDL define el <em>esqueleto</em> de la base de datos. Son los comandos que crean, modifican o eliminan tablas, columnas e índices. <strong>No tocan los datos.</strong></p>
+<pre class="mermaid"><code>flowchart TD
+    DDL["DDL"] --&gt; CREATE["CREATE\nCrea objetos nuevos"]
+    DDL --&gt; ALTER["ALTER\nModifica objetos existentes"]
+    DDL --&gt; DROP["DROP\nElimina objetos"]
+    DDL --&gt; TRUNCATE["TRUNCATE\nVacía una tabla"]</code></pre>
+<h3 id="bases-de-datos">Bases de datos<a class="headerlink" href="#bases-de-datos" title="Permanent link">¶</a></h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">-- Crear</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">mi_base</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">-- Eliminar</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">DROP</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">mi_base</span><span class="p">;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1">-- Listar (desde psql)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="err">\</span><span class="n">l</span>
+</span></code></pre></div>
+<h3 id="tablas">Tablas<a class="headerlink" href="#tablas" title="Permanent link">¶</a></h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">-- Crear tabla básica</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">id</span><span class="w">          </span><span class="nb">SERIAL</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="n">nombre</span><span class="w">      </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="n">email</span><span class="w">       </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="k">UNIQUE</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="n">edad</span><span class="w">        </span><span class="nb">INTEGER</span><span class="p">,</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="n">activo</span><span class="w">      </span><span class="nb">BOOLEAN</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">TRUE</span><span class="p">,</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="n">creado_en</span><span class="w">   </span><span class="k">TIMESTAMP</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">);</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="c1">-- Crear tabla solo si no existe</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">productos</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="n">id</span><span class="w">          </span><span class="nb">SERIAL</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="n">nombre</span><span class="w">      </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="n">precio</span><span class="w">      </span><span class="nb">NUMERIC</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="n">stock</span><span class="w">       </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="mi">0</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="p">);</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="c1">-- Eliminar tabla</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="c1">-- Eliminar tabla y todo lo que depende de ella</span>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">CASCADE</span><span class="p">;</span>
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="c1">-- Vaciar tabla (sin eliminarla)</span>
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="k">TRUNCATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="k">TRUNCATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">RESTART</span><span class="w"> </span><span class="k">IDENTITY</span><span class="p">;</span><span class="w"> </span><span class="c1">-- también resetea secuencias</span>
+</span></code></pre></div>
+<h3 id="modificar-tablas-alter-table">Modificar tablas (ALTER TABLE)<a class="headerlink" href="#modificar-tablas-alter-table" title="Permanent link">¶</a></h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">-- Agregar columna</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">telefono</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1">-- Eliminar columna</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">DROP</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">telefono</span><span class="p">;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1">-- Cambiar tipo de dato</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">ALTER</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">edad</span><span class="w"> </span><span class="k">TYPE</span><span class="w"> </span><span class="nb">SMALLINT</span><span class="p">;</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c1">-- Renombrar columna</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">RENAME</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">nombre</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">nombre_completo</span><span class="p">;</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="c1">-- Renombrar tabla</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">RENAME</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">clientes</span><span class="p">;</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="c1">-- Agregar restricción NOT NULL</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">ALTER</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">;</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="c1">-- Quitar restricción NOT NULL</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">ALTER</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">edad</span><span class="w"> </span><span class="k">DROP</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">;</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="c1">-- Agregar valor por defecto</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">ALTER</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">activo</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">TRUE</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="tipos-de-datos-frecuentes">Tipos de datos frecuentes<a class="headerlink" href="#tipos-de-datos-frecuentes" title="Permanent link">¶</a></h3>
+<p>Al definir una columna, elegís su tipo de dato. Esto determina qué valores acepta y cuánto espacio ocupa en disco.</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Cuándo usarlo</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SERIAL</code> / <code>BIGSERIAL</code></td>
+<td>ID autoincremental (clave primaria)</td>
+<td><code>id SERIAL PRIMARY KEY</code></td>
+</tr>
+<tr>
+<td><code>INTEGER</code></td>
+<td>Números enteros pequeños/medianos</td>
+<td>edades, cantidades</td>
+</tr>
+<tr>
+<td><code>BIGINT</code></td>
+<td>Enteros muy grandes</td>
+<td>IDs de alto volumen</td>
+</tr>
+<tr>
+<td><code>NUMERIC(p, s)</code></td>
+<td>Decimal <strong>exacto</strong> — siempre para dinero</td>
+<td><code>precio NUMERIC(10, 2)</code></td>
+</tr>
+<tr>
+<td><code>REAL</code> / <code>DOUBLE PRECISION</code></td>
+<td>Decimal aproximado (científico)</td>
+<td>coordenadas GPS</td>
+</tr>
+<tr>
+<td><code>VARCHAR(n)</code></td>
+<td>Texto de longitud máxima conocida</td>
+<td>nombres, emails</td>
+</tr>
+<tr>
+<td><code>TEXT</code></td>
+<td>Texto libre sin límite</td>
+<td>descripciones, contenido</td>
+</tr>
+<tr>
+<td><code>BOOLEAN</code></td>
+<td>Verdadero o falso</td>
+<td><code>activo BOOLEAN DEFAULT TRUE</code></td>
+</tr>
+<tr>
+<td><code>DATE</code></td>
+<td>Solo fecha (sin hora)</td>
+<td>fecha de nacimiento</td>
+</tr>
+<tr>
+<td><code>TIME</code></td>
+<td>Solo hora (sin fecha)</td>
+<td>horario de apertura</td>
+</tr>
+<tr>
+<td><code>TIMESTAMP</code></td>
+<td>Fecha y hora juntas</td>
+<td><code>creado_en TIMESTAMP</code></td>
+</tr>
+<tr>
+<td><code>TIMESTAMPTZ</code></td>
+<td>Fecha y hora <strong>con zona horaria</strong></td>
+<td>recomendado para producción</td>
+</tr>
+<tr>
+<td><code>JSON</code> / <code>JSONB</code></td>
+<td>Datos semiestructurados. <code>JSONB</code> es indexable y más rápido</td>
+<td>configuraciones</td>
+</tr>
+<tr>
+<td><code>UUID</code></td>
+<td>Identificador globalmente único</td>
+<td>IDs distribuidos</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">NUMERIC vs FLOAT para dinero</p>
+<p>Nunca uses <code>REAL</code> o <code>FLOAT</code> para dinero. Son aproximaciones binarias y pueden acumular errores (0.1 + 0.2 ≠ 0.3). Usá siempre <code>NUMERIC(p, s)</code>.</p>
+</div>
 <hr>
-<p>Mientras tanto, podés explorar los otros módulos disponibles en el <a href="../">Inicio</a>.</p>
+<h2 id="dml-manipulacion-de-datos">DML — Manipulación de datos<a class="headerlink" href="#dml-manipulacion-de-datos" title="Permanent link">¶</a></h2>
+<p>DML trabaja con los datos dentro de las tablas. Los cuatro comandos fundamentales forman el <strong>CRUD</strong>:</p>
+<pre class="mermaid"><code>flowchart LR
+    C["CREATE\n→ INSERT"] --&gt; R["READ\n→ SELECT"]
+    R --&gt; U["UPDATE\n→ UPDATE"]
+    U --&gt; D["DELETE\n→ DELETE"]
+
+    style C fill:#2d6a4f,color:#fff
+    style R fill:#1d3557,color:#fff
+    style U fill:#e76f51,color:#fff
+    style D fill:#9b2226,color:#fff</code></pre>
+<h3 id="insert">INSERT<a class="headerlink" href="#insert" title="Permanent link">¶</a></h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">-- Insertar un registro</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="p">,</span><span class="w"> </span><span class="n">edad</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">'Ana García'</span><span class="p">,</span><span class="w"> </span><span class="s1">'ana@email.com'</span><span class="p">,</span><span class="w"> </span><span class="mi">28</span><span class="p">);</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1">-- Insertar múltiples registros</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="p">,</span><span class="w"> </span><span class="n">edad</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="p">(</span><span class="s1">'Carlos López'</span><span class="p">,</span><span class="w"> </span><span class="s1">'carlos@email.com'</span><span class="p">,</span><span class="w"> </span><span class="mi">35</span><span class="p">),</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="p">(</span><span class="s1">'María Fernández'</span><span class="p">,</span><span class="w"> </span><span class="s1">'maria@email.com'</span><span class="p">,</span><span class="w"> </span><span class="mi">22</span><span class="p">),</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="p">(</span><span class="s1">'Juan Pérez'</span><span class="p">,</span><span class="w"> </span><span class="s1">'juan@email.com'</span><span class="p">,</span><span class="w"> </span><span class="mi">41</span><span class="p">);</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1">-- Insertar y retornar el registro creado</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="p">)</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">'Laura Torres'</span><span class="p">,</span><span class="w"> </span><span class="s1">'laura@email.com'</span><span class="p">)</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="n">RETURNING</span><span class="w"> </span><span class="o">*</span><span class="p">;</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="c1">-- Insertar o ignorar si ya existe (ON CONFLICT)</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="p">(</span><span class="n">email</span><span class="p">,</span><span class="w"> </span><span class="n">nombre</span><span class="p">)</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">'ana@email.com'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Ana García'</span><span class="p">)</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="k">ON</span><span class="w"> </span><span class="n">CONFLICT</span><span class="w"> </span><span class="p">(</span><span class="n">email</span><span class="p">)</span><span class="w"> </span><span class="k">DO</span><span class="w"> </span><span class="k">NOTHING</span><span class="p">;</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="c1">-- Insertar o actualizar si ya existe (UPSERT)</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="p">(</span><span class="n">email</span><span class="p">,</span><span class="w"> </span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">edad</span><span class="p">)</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">'ana@email.com'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Ana García'</span><span class="p">,</span><span class="w"> </span><span class="mi">29</span><span class="p">)</span>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="k">ON</span><span class="w"> </span><span class="n">CONFLICT</span><span class="w"> </span><span class="p">(</span><span class="n">email</span><span class="p">)</span><span class="w"> </span><span class="k">DO</span><span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">SET</span>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="w">    </span><span class="n">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXCLUDED</span><span class="p">.</span><span class="n">nombre</span><span class="p">,</span>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="w">    </span><span class="n">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EXCLUDED</span><span class="p">.</span><span class="n">edad</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="select-anatomia-completa">SELECT — Anatomía completa<a class="headerlink" href="#select-anatomia-completa" title="Permanent link">¶</a></h3>
+<p><code>SELECT</code> es el comando más rico de SQL. Puede tener muchas cláusulas encadenadas. Lo importante: <strong>el orden en que se escriben no es el orden en que se ejecutan</strong>.</p>
+<h4 id="orden-de-escritura-vs-orden-de-ejecucion">Orden de escritura vs orden de ejecución<a class="headerlink" href="#orden-de-escritura-vs-orden-de-ejecucion" title="Permanent link">¶</a></h4>
+<pre class="mermaid"><code>flowchart TD
+    subgraph escritura["📝 Orden de escritura"]
+        direction TB
+        e1["1. SELECT columnas"]
+        e2["2. FROM tabla"]
+        e3["3. JOIN otras_tablas ON ..."]
+        e4["4. WHERE condición_fila"]
+        e5["5. GROUP BY columna"]
+        e6["6. HAVING condición_grupo"]
+        e7["7. ORDER BY columna"]
+        e8["8. LIMIT n OFFSET m"]
+        e1 --&gt; e2 --&gt; e3 --&gt; e4 --&gt; e5 --&gt; e6 --&gt; e7 --&gt; e8
+    end
+
+    subgraph ejecucion["⚙️ Orden de ejecución real"]
+        direction TB
+        x1["1. FROM + JOIN  → ¿de dónde?"]
+        x2["2. WHERE        → filtrar filas"]
+        x3["3. GROUP BY     → agrupar"]
+        x4["4. HAVING       → filtrar grupos"]
+        x5["5. SELECT       → elegir columnas"]
+        x6["6. ORDER BY     → ordenar"]
+        x7["7. LIMIT/OFFSET → paginar"]
+        x1 --&gt; x2 --&gt; x3 --&gt; x4 --&gt; x5 --&gt; x6 --&gt; x7
+    end</code></pre>
+<div class="admonition info">
+<p class="admonition-title">¿Por qué importa el orden de ejecución?</p>
+<p>Por eso no podés usar un alias definido en <code>SELECT</code> dentro de un <code>WHERE</code> — cuando <code>WHERE</code> se ejecuta, <code>SELECT</code> todavía no corrió. Sí podés usarlo en <code>ORDER BY</code> porque ese sí corre después.</p>
+</div>
+<h4 id="cada-clausula-explicada">Cada cláusula explicada<a class="headerlink" href="#cada-clausula-explicada" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Cláusula</th>
+<th>Para qué sirve</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SELECT col</code></td>
+<td>Define <strong>qué columnas</strong> mostrar en el resultado</td>
+<td><code>SELECT nombre, edad</code></td>
+</tr>
+<tr>
+<td><code>SELECT *</code></td>
+<td>Devuelve <strong>todas</strong> las columnas (evitarlo en producción)</td>
+<td><code>SELECT * FROM usuarios</code></td>
+</tr>
+<tr>
+<td><code>SELECT DISTINCT</code></td>
+<td>Elimina <strong>filas duplicadas</strong> del resultado</td>
+<td><code>SELECT DISTINCT ciudad</code></td>
+</tr>
+<tr>
+<td><code>FROM tabla</code></td>
+<td>Define <strong>de qué tabla</strong> vienen los datos</td>
+<td><code>FROM usuarios</code></td>
+</tr>
+<tr>
+<td><code>JOIN</code></td>
+<td><strong>Combina</strong> filas de dos tablas según una condición</td>
+<td><code>JOIN pedidos ON usuarios.id = pedidos.usuario_id</code></td>
+</tr>
+<tr>
+<td><code>WHERE condición</code></td>
+<td>Filtra <strong>filas individuales</strong> antes de agrupar</td>
+<td><code>WHERE activo = TRUE</code></td>
+</tr>
+<tr>
+<td><code>GROUP BY col</code></td>
+<td><strong>Agrupa</strong> filas que comparten el mismo valor para aplicar funciones de agregación</td>
+<td><code>GROUP BY ciudad</code></td>
+</tr>
+<tr>
+<td><code>HAVING condición</code></td>
+<td>Filtra <strong>grupos</strong> (igual que WHERE pero después del GROUP BY)</td>
+<td><code>HAVING COUNT(*) &gt; 5</code></td>
+</tr>
+<tr>
+<td><code>ORDER BY col</code></td>
+<td><strong>Ordena</strong> el resultado. <code>ASC</code> = ascendente (default), <code>DESC</code> = descendente</td>
+<td><code>ORDER BY edad DESC</code></td>
+</tr>
+<tr>
+<td><code>LIMIT n</code></td>
+<td>Devuelve solo los primeros <strong>n</strong> resultados</td>
+<td><code>LIMIT 10</code></td>
+</tr>
+<tr>
+<td><code>OFFSET m</code></td>
+<td>Salta los primeros <strong>m</strong> resultados (para paginación)</td>
+<td><code>OFFSET 20</code></td>
+</tr>
+<tr>
+<td><code>AS alias</code></td>
+<td>Le pone un <strong>nombre temporal</strong> a una columna o tabla en el resultado</td>
+<td><code>COUNT(*) AS total</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="la-query-mas-completa-paso-a-paso">La query más completa — paso a paso<a class="headerlink" href="#la-query-mas-completa-paso-a-paso" title="Permanent link">¶</a></h4>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">SELECT</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="n">u</span><span class="p">.</span><span class="n">ciudad</span><span class="p">,</span><span class="w">                        </span><span class="c1">-- columna de la tabla usuarios (alias u)</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w">      </span><span class="k">AS</span><span class="w"> </span><span class="n">total_pedidos</span><span class="p">,</span><span class="w">  </span><span class="c1">-- cuenta pedidos por grupo</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="k">AVG</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">total</span><span class="p">)</span><span class="w">     </span><span class="k">AS</span><span class="w"> </span><span class="n">ticket_promedio</span><span class="p">,</span><span class="w"> </span><span class="c1">-- promedio del valor de pedidos</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="k">MAX</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">total</span><span class="p">)</span><span class="w">     </span><span class="k">AS</span><span class="w"> </span><span class="n">pedido_maximo</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="n">u</span><span class="w">                      </span><span class="c1">-- tabla principal, alias 'u'</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="n">p</span><span class="w">                 </span><span class="c1">-- combinar con la tabla pedidos</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="k">ON</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">usuario_id</span><span class="w">           </span><span class="c1">-- condición del JOIN: relacionar por id</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">activo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">TRUE</span><span class="w">                </span><span class="c1">-- filtro ANTES de agrupar: solo usuarios activos</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">  </span><span class="k">AND</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">fecha</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="s1">'2024-01-01'</span><span class="w">        </span><span class="c1">-- segundo filtro: pedidos del 2024 en adelante</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">ciudad</span><span class="w">                    </span><span class="c1">-- agrupar todos los resultados por ciudad</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="k">HAVING</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">10</span><span class="w">             </span><span class="c1">-- filtro DESPUÉS de agrupar: solo ciudades con más de 10 pedidos</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">total_pedidos</span><span class="w"> </span><span class="k">DESC</span><span class="w">          </span><span class="c1">-- ordenar de mayor a menor cantidad de pedidos</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="k">LIMIT</span><span class="w"> </span><span class="mi">5</span><span class="w">                              </span><span class="c1">-- mostrar solo las 5 primeras ciudades</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="k">OFFSET</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">                            </span><span class="c1">-- empezar desde el principio (página 1)</span>
+</span></code></pre></div>
+<h4 id="filtros-en-where-operadores-disponibles">Filtros en WHERE — operadores disponibles<a class="headerlink" href="#filtros-en-where-operadores-disponibles" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Significado</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>=</code></td>
+<td>Igual</td>
+<td><code>WHERE activo = TRUE</code></td>
+</tr>
+<tr>
+<td><code>&lt;&gt;</code> o <code>!=</code></td>
+<td>Distinto</td>
+<td><code>WHERE estado &lt;&gt; 'cancelado'</code></td>
+</tr>
+<tr>
+<td><code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code></td>
+<td>Comparación numérica</td>
+<td><code>WHERE edad &gt;= 18</code></td>
+</tr>
+<tr>
+<td><code>BETWEEN a AND b</code></td>
+<td>Entre dos valores (inclusive)</td>
+<td><code>WHERE edad BETWEEN 18 AND 65</code></td>
+</tr>
+<tr>
+<td><code>IN (...)</code></td>
+<td>Está en la lista</td>
+<td><code>WHERE ciudad IN ('Lima', 'Bogotá')</code></td>
+</tr>
+<tr>
+<td><code>NOT IN (...)</code></td>
+<td>No está en la lista</td>
+<td><code>WHERE id NOT IN (1, 2, 3)</code></td>
+</tr>
+<tr>
+<td><code>LIKE 'patrón'</code></td>
+<td>Coincidencia de texto (case-sensitive). <code>%</code> = cualquier cosa, <code>_</code> = un carácter</td>
+<td><code>WHERE nombre LIKE 'Ana%'</code></td>
+</tr>
+<tr>
+<td><code>ILIKE 'patrón'</code></td>
+<td>Igual que LIKE pero <strong>case-insensitive</strong></td>
+<td><code>WHERE nombre ILIKE '%garcía%'</code></td>
+</tr>
+<tr>
+<td><code>IS NULL</code></td>
+<td>El valor es nulo</td>
+<td><code>WHERE telefono IS NULL</code></td>
+</tr>
+<tr>
+<td><code>IS NOT NULL</code></td>
+<td>El valor no es nulo</td>
+<td><code>WHERE email IS NOT NULL</code></td>
+</tr>
+<tr>
+<td><code>AND</code></td>
+<td>Las dos condiciones deben cumplirse</td>
+<td><code>WHERE activo = TRUE AND edad &gt; 18</code></td>
+</tr>
+<tr>
+<td><code>OR</code></td>
+<td>Al menos una condición debe cumplirse</td>
+<td><code>WHERE ciudad = 'Lima' OR ciudad = 'Bogotá'</code></td>
+</tr>
+<tr>
+<td><code>NOT</code></td>
+<td>Niega la condición</td>
+<td><code>WHERE NOT activo</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="funciones-de-agregacion">Funciones de agregación<a class="headerlink" href="#funciones-de-agregacion" title="Permanent link">¶</a></h4>
+<p>Solo se pueden usar en <code>SELECT</code> o <code>HAVING</code> (no en <code>WHERE</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Función</th>
+<th>Qué devuelve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>COUNT(*)</code></td>
+<td>Cantidad de filas (incluyendo nulos)</td>
+</tr>
+<tr>
+<td><code>COUNT(col)</code></td>
+<td>Cantidad de filas donde <code>col</code> no es nulo</td>
+</tr>
+<tr>
+<td><code>SUM(col)</code></td>
+<td>Suma de todos los valores</td>
+</tr>
+<tr>
+<td><code>AVG(col)</code></td>
+<td>Promedio de los valores</td>
+</tr>
+<tr>
+<td><code>MIN(col)</code></td>
+<td>Valor mínimo</td>
+</tr>
+<tr>
+<td><code>MAX(col)</code></td>
+<td>Valor máximo</td>
+</tr>
+<tr>
+<td><code>ROUND(AVG(col), 2)</code></td>
+<td>Promedio redondeado a 2 decimales</td>
+</tr>
+</tbody>
+</table>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">-- Ejemplo completo con varias funciones de agregación</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">SELECT</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w">            </span><span class="k">AS</span><span class="w"> </span><span class="n">total_usuarios</span><span class="p">,</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="k">AVG</span><span class="p">(</span><span class="n">edad</span><span class="p">)</span><span class="w">           </span><span class="k">AS</span><span class="w"> </span><span class="n">edad_promedio</span><span class="p">,</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="k">MIN</span><span class="p">(</span><span class="n">edad</span><span class="p">)</span><span class="w">           </span><span class="k">AS</span><span class="w"> </span><span class="n">mas_joven</span><span class="p">,</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="k">MAX</span><span class="p">(</span><span class="n">edad</span><span class="p">)</span><span class="w">           </span><span class="k">AS</span><span class="w"> </span><span class="n">mas_mayor</span><span class="p">,</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="n">ROUND</span><span class="p">(</span><span class="k">AVG</span><span class="p">(</span><span class="n">edad</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">promedio_redondeado</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">activo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">TRUE</span><span class="p">;</span>
+</span></code></pre></div>
+<h4 id="queries-basicas-de-select">Queries básicas de SELECT<a class="headerlink" href="#queries-basicas-de-select" title="Permanent link">¶</a></h4>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">-- Todos los registros y todas las columnas</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1">-- Solo ciertas columnas</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1">-- Con alias para las columnas</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">nombre</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="ss">"Nombre Completo"</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="ss">"Correo"</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c1">-- Eliminar duplicados</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">ciudad</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="c1">-- Ordenar</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">nombre</span><span class="w"> </span><span class="k">ASC</span><span class="p">;</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">creado_en</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">edad</span><span class="w"> </span><span class="k">DESC</span><span class="p">,</span><span class="w"> </span><span class="n">nombre</span><span class="w"> </span><span class="k">ASC</span><span class="p">;</span><span class="w"> </span><span class="c1">-- múltiples criterios</span>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="c1">-- Paginación (página 3 de 10 resultados por página = saltear 20, mostrar 10)</span>
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span>
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">id</span>
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="k">OFFSET</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="update">UPDATE<a class="headerlink" href="#update" title="Permanent link">¶</a></h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">-- Actualizar un campo</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">activo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">FALSE</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1">-- Actualizar múltiples campos</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">usuarios</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="k">SET</span><span class="w"> </span><span class="n">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Ana Martínez'</span><span class="p">,</span><span class="w"> </span><span class="n">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">29</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'ana@email.com'</span><span class="p">;</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="c1">-- Actualizar y retornar el registro modificado</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">usuarios</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="k">SET</span><span class="w"> </span><span class="n">activo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">FALSE</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="n">RETURNING</span><span class="w"> </span><span class="o">*</span><span class="p">;</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="c1">-- Actualizar con subconsulta</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">productos</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="k">SET</span><span class="w"> </span><span class="n">precio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">precio</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1</span><span class="p">.</span><span class="mi">10</span>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">productos</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">stock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+</span></code></pre></div>
+<h3 id="delete">DELETE<a class="headerlink" href="#delete" title="Permanent link">¶</a></h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1">-- Eliminar registros específicos</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1">-- Eliminar con condición</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">activo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">FALSE</span><span class="p">;</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1">-- Eliminar y retornar los registros eliminados</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="n">RETURNING</span><span class="w"> </span><span class="o">*</span><span class="p">;</span>
+</span></code></pre></div>
+<hr>
+<h2 id="joins-combinar-tablas">JOINs — Combinar tablas<a class="headerlink" href="#joins-combinar-tablas" title="Permanent link">¶</a></h2>
+<p>Los JOINs unen filas de dos tablas en base a una condición (generalmente una clave foránea).</p>
+<pre class="mermaid"><code>flowchart LR
+    subgraph A["Tabla A\nusuarios"]
+        a1["id=1 Ana"]
+        a2["id=2 Carlos"]
+        a3["id=3 María"]
+    end
+    subgraph B["Tabla B\npedidos"]
+        b1["usuario_id=1"]
+        b2["usuario_id=1"]
+        b3["usuario_id=2"]
+    end
+    a1 --- b1
+    a1 --- b2
+    a2 --- b3</code></pre>
+<table>
+<thead>
+<tr>
+<th>JOIN</th>
+<th>Qué devuelve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>INNER JOIN</code></td>
+<td>Solo filas que tienen coincidencia <strong>en ambas tablas</strong></td>
+</tr>
+<tr>
+<td><code>LEFT JOIN</code></td>
+<td><strong>Todas</strong> las filas de la tabla izquierda + las que coinciden de la derecha (rellena con <code>NULL</code> si no hay match)</td>
+</tr>
+<tr>
+<td><code>RIGHT JOIN</code></td>
+<td><strong>Todas</strong> las filas de la tabla derecha + las que coinciden de la izquierda</td>
+</tr>
+<tr>
+<td><code>FULL OUTER JOIN</code></td>
+<td><strong>Todas</strong> las filas de ambas tablas, con <code>NULL</code> donde no hay coincidencia</td>
+</tr>
+</tbody>
+</table>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1">-- Tabla de ejemplo para los JOINs</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="n">id</span><span class="w">          </span><span class="nb">SERIAL</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="n">usuario_id</span><span class="w">  </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">usuarios</span><span class="p">(</span><span class="n">id</span><span class="p">),</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="n">total</span><span class="w">       </span><span class="nb">NUMERIC</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">),</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="n">fecha</span><span class="w">       </span><span class="nb">DATE</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">CURRENT_DATE</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="p">);</span>
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">-- INNER JOIN: solo filas con coincidencia en ambas tablas</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="c1">-- Resultado: usuarios que TIENEN pedidos</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">total</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">fecha</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="n">u</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">usuario_id</span><span class="p">;</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1">-- LEFT JOIN: todos los usuarios, con o sin pedidos</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="c1">-- Los usuarios sin pedidos aparecen con NULL en columnas de pedidos</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">total</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="n">u</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">usuario_id</span><span class="p">;</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="c1">-- LEFT JOIN para encontrar usuarios SIN pedidos</span>
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">nombre</span>
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="n">u</span>
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">usuario_id</span>
+</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="p">;</span><span class="w">  </span><span class="c1">-- el NULL indica que no hay coincidencia</span>
+</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>
+</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="c1">-- RIGHT JOIN: todos los pedidos, aunque el usuario fue eliminado</span>
+</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">total</span>
+</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="n">u</span>
+</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="k">RIGHT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">usuario_id</span><span class="p">;</span>
+</span><span id="__span-12-23"><a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>
+</span><span id="__span-12-24"><a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="c1">-- FULL OUTER JOIN: todo de ambas tablas</span>
+</span><span id="__span-12-25"><a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">total</span>
+</span><span id="__span-12-26"><a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="n">u</span>
+</span><span id="__span-12-27"><a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a><span class="k">FULL</span><span class="w"> </span><span class="k">OUTER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">usuario_id</span><span class="p">;</span>
+</span></code></pre></div>
+<hr>
+<h2 id="indices">Índices<a class="headerlink" href="#indices" title="Permanent link">¶</a></h2>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1">-- Crear índice simple (acelera búsquedas por esa columna)</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_usuarios_email</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">usuarios</span><span class="p">(</span><span class="n">email</span><span class="p">);</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1">-- Índice único</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">UNIQUE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_usuarios_email</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">usuarios</span><span class="p">(</span><span class="n">email</span><span class="p">);</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1">-- Índice compuesto</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_nombre_ciudad</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">usuarios</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">ciudad</span><span class="p">);</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="c1">-- Ver índices de una tabla</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="err">\</span><span class="n">di</span><span class="w"> </span><span class="n">usuarios</span><span class="o">*</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="c1">-- Eliminar índice</span>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="k">DROP</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_usuarios_email</span><span class="p">;</span>
+</span></code></pre></div>
+<hr>
+<h2 id="consultas-utiles-del-dia-a-dia">Consultas útiles del día a día<a class="headerlink" href="#consultas-utiles-del-dia-a-dia" title="Permanent link">¶</a></h2>
+<h3 id="funciones-de-texto-y-fecha">Funciones de texto y fecha<a class="headerlink" href="#funciones-de-texto-y-fecha" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Función</th>
+<th>Qué hace</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NOW()</code></td>
+<td>Fecha y hora actual</td>
+<td><code>SELECT NOW()</code></td>
+</tr>
+<tr>
+<td><code>CURRENT_DATE</code></td>
+<td>Solo la fecha de hoy</td>
+<td><code>SELECT CURRENT_DATE</code></td>
+</tr>
+<tr>
+<td><code>CURRENT_TIME</code></td>
+<td>Solo la hora actual</td>
+<td><code>SELECT CURRENT_TIME</code></td>
+</tr>
+<tr>
+<td><code>TO_CHAR(fecha, formato)</code></td>
+<td>Formatea una fecha como texto</td>
+<td><code>TO_CHAR(NOW(), 'DD/MM/YYYY')</code></td>
+</tr>
+<tr>
+<td><code>AGE(fecha)</code></td>
+<td>Tiempo transcurrido desde esa fecha</td>
+<td><code>AGE(fecha_nacimiento)</code></td>
+</tr>
+<tr>
+<td><code>EXTRACT(part FROM fecha)</code></td>
+<td>Extrae una parte de la fecha</td>
+<td><code>EXTRACT(YEAR FROM NOW())</code></td>
+</tr>
+<tr>
+<td><code>\|\|</code></td>
+<td>Concatena texto</td>
+<td><code>nombre \|\| ' ' \|\| apellido</code></td>
+</tr>
+<tr>
+<td><code>CONCAT(a, b, c)</code></td>
+<td>Concatena texto (alternativa)</td>
+<td><code>CONCAT(nombre, ' ', apellido)</code></td>
+</tr>
+<tr>
+<td><code>UPPER(texto)</code></td>
+<td>Convierte a mayúsculas</td>
+<td><code>UPPER(nombre)</code></td>
+</tr>
+<tr>
+<td><code>LOWER(texto)</code></td>
+<td>Convierte a minúsculas</td>
+<td><code>LOWER(email)</code></td>
+</tr>
+<tr>
+<td><code>TRIM(texto)</code></td>
+<td>Elimina espacios al inicio y fin</td>
+<td><code>TRIM(nombre)</code></td>
+</tr>
+<tr>
+<td><code>LENGTH(texto)</code></td>
+<td>Largo del texto</td>
+<td><code>LENGTH(descripcion)</code></td>
+</tr>
+<tr>
+<td><code>SUBSTRING(texto, inicio, largo)</code></td>
+<td>Extrae parte de un texto</td>
+<td><code>SUBSTRING(dni, 1, 2)</code></td>
+</tr>
+</tbody>
+</table>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1">-- Fechas</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">NOW</span><span class="p">();</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">CURRENT_DATE</span><span class="p">;</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">TO_CHAR</span><span class="p">(</span><span class="n">NOW</span><span class="p">(),</span><span class="w"> </span><span class="s1">'DD/MM/YYYY HH24:MI'</span><span class="p">);</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">EXTRACT</span><span class="p">(</span><span class="k">YEAR</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">NOW</span><span class="p">());</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">AGE</span><span class="p">(</span><span class="n">NOW</span><span class="p">(),</span><span class="w"> </span><span class="n">creado_en</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">antiguedad</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="c1">-- Texto</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">nombre</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s1">' &lt;'</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="s1">'&gt;'</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">contacto</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">CONCAT</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="s1">' - '</span><span class="p">,</span><span class="w"> </span><span class="n">ciudad</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">etiqueta</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">UPPER</span><span class="p">(</span><span class="n">nombre</span><span class="p">),</span><span class="w"> </span><span class="k">LOWER</span><span class="p">(</span><span class="n">email</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="case-logica-condicional">CASE — lógica condicional<a class="headerlink" href="#case-logica-condicional" title="Permanent link">¶</a></h3>
+<p><code>CASE</code> funciona como un <code>if/elif/else</code> dentro de una query. Evalúa condiciones de arriba a abajo y devuelve el primer valor cuya condición sea verdadera.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1">-- Sintaxis buscada (evalúa condiciones)</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">nombre</span><span class="p">,</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span><span class="k">CASE</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="n">edad</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">18</span><span class="w">           </span><span class="k">THEN</span><span class="w"> </span><span class="s1">'menor de edad'</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="n">edad</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="mi">18</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">65</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">'adulto'</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">        </span><span class="k">ELSE</span><span class="w"> </span><span class="s1">'adulto mayor'</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">    </span><span class="k">END</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">grupo_etario</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="c1">-- Sintaxis simple (compara contra un valor)</span>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">nombre</span><span class="p">,</span>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">    </span><span class="k">CASE</span><span class="w"> </span><span class="n">estado</span>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="s1">'activo'</span><span class="w">    </span><span class="k">THEN</span><span class="w"> </span><span class="s1">'✅ Activo'</span>
+</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="s1">'suspendido'</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">'⚠️ Suspendido'</span>
+</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="s1">'eliminado'</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">'❌ Eliminado'</span>
+</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="w">        </span><span class="k">ELSE</span><span class="w"> </span><span class="s1">'desconocido'</span>
+</span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="w">    </span><span class="k">END</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">estado_legible</span>
+</span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="coalesce-manejar-nulls">COALESCE — manejar NULLs<a class="headerlink" href="#coalesce-manejar-nulls" title="Permanent link">¶</a></h3>
+<p><code>COALESCE(a, b, c...)</code> devuelve el <strong>primer valor no nulo</strong> de la lista. Muy útil para poner valores por defecto al mostrar datos.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1">-- Si telefono es NULL, mostrar 'sin teléfono'</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="k">COALESCE</span><span class="p">(</span><span class="n">telefono</span><span class="p">,</span><span class="w"> </span><span class="s1">'sin teléfono'</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">telefono</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="c1">-- Múltiples fallbacks: usa celular, si no teléfono fijo, si no 'sin contacto'</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="k">COALESCE</span><span class="p">(</span><span class="n">celular</span><span class="p">,</span><span class="w"> </span><span class="n">telefono_fijo</span><span class="p">,</span><span class="w"> </span><span class="s1">'sin contacto'</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">contacto</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="ctes-with-subconsultas-nombradas">CTEs — WITH (subconsultas nombradas)<a class="headerlink" href="#ctes-with-subconsultas-nombradas" title="Permanent link">¶</a></h3>
+<p>Un CTE (Common Table Expression) es como crear una tabla temporal para usar dentro de la misma query. Hace el código más legible que anidar subconsultas.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1">-- Sin CTE (difícil de leer)</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">pedidos</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="k">FROM</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">activo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">TRUE</span><span class="p">)</span><span class="w"> </span><span class="n">u</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">usuario_id</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">nombre</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="c1">-- Con CTE (mucho más claro)</span>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="k">WITH</span><span class="w"> </span><span class="n">usuarios_activos</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">    </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">activo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">TRUE</span><span class="w">   </span><span class="c1">-- esto se ejecuta primero</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="p">)</span>
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">pedidos</span>
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios_activos</span><span class="w"> </span><span class="n">u</span><span class="w">                          </span><span class="c1">-- acá usamos el CTE como si fuera una tabla</span>
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">usuario_id</span>
+</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">nombre</span>
+</span><span id="__span-17-16"><a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</span><span id="__span-17-17"><a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>
+</span><span id="__span-17-18"><a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="c1">-- Múltiples CTEs encadenados</span>
+</span><span id="__span-17-19"><a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="k">WITH</span>
+</span><span id="__span-17-20"><a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a><span class="w">    </span><span class="n">activos</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-17-21"><a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a><span class="w">        </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">activo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">TRUE</span>
+</span><span id="__span-17-22"><a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a><span class="w">    </span><span class="p">),</span>
+</span><span id="__span-17-23"><a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a><span class="w">    </span><span class="n">con_pedidos</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-17-24"><a id="__codelineno-17-24" name="__codelineno-17-24" href="#__codelineno-17-24"></a><span class="w">        </span><span class="k">SELECT</span><span class="w"> </span><span class="n">usuario_id</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">usuario_id</span>
+</span><span id="__span-17-25"><a id="__codelineno-17-25" name="__codelineno-17-25" href="#__codelineno-17-25"></a><span class="w">    </span><span class="p">)</span>
+</span><span id="__span-17-26"><a id="__codelineno-17-26" name="__codelineno-17-26" href="#__codelineno-17-26"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="k">COALESCE</span><span class="p">(</span><span class="n">cp</span><span class="p">.</span><span class="n">total</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">pedidos</span>
+</span><span id="__span-17-27"><a id="__codelineno-17-27" name="__codelineno-17-27" href="#__codelineno-17-27"></a><span class="k">FROM</span><span class="w"> </span><span class="n">activos</span><span class="w"> </span><span class="n">a</span>
+</span><span id="__span-17-28"><a id="__codelineno-17-28" name="__codelineno-17-28" href="#__codelineno-17-28"></a><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">con_pedidos</span><span class="w"> </span><span class="n">cp</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cp</span><span class="p">.</span><span class="n">usuario_id</span>
+</span><span id="__span-17-29"><a id="__codelineno-17-29" name="__codelineno-17-29" href="#__codelineno-17-29"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="subconsultas">Subconsultas<a class="headerlink" href="#subconsultas" title="Permanent link">¶</a></h3>
+<p>Una subconsulta es un <code>SELECT</code> dentro de otro <code>SELECT</code>. Se puede usar en <code>WHERE</code>, <code>FROM</code> o <code>SELECT</code>.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1">-- En WHERE: usuarios que hicieron pedidos de más de $1000</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">usuario_id</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1000</span><span class="p">);</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="c1">-- En WHERE con NOT IN: usuarios sin pedidos en 2024</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">    </span><span class="k">SELECT</span><span class="w"> </span><span class="n">usuario_id</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">pedidos</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">fecha</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="s1">'2024-01-01'</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">usuario_id</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span>
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="p">);</span>
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="c1">-- En FROM: tratar el resultado de un SELECT como si fuera una tabla</span>
+</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ciudad</span><span class="p">,</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">total_pedidos</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">promedio_por_ciudad</span>
+</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-18-16"><a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a><span class="w">    </span><span class="k">SELECT</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">ciudad</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">total_pedidos</span>
+</span><span id="__span-18-17"><a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a><span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="n">u</span>
+</span><span id="__span-18-18"><a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a><span class="w">    </span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">pedidos</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">usuario_id</span>
+</span><span id="__span-18-19"><a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a><span class="w">    </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">ciudad</span><span class="p">,</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">id</span>
+</span><span id="__span-18-20"><a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">sub</span>
+</span><span id="__span-18-21"><a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">ciudad</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="queries-de-diagnostico">Queries de diagnóstico<a class="headerlink" href="#queries-de-diagnostico" title="Permanent link">¶</a></h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1">-- Ver versión de PostgreSQL</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">version</span><span class="p">();</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="c1">-- Las tablas más grandes</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="k">SELECT</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">    </span><span class="n">relname</span><span class="w">                                           </span><span class="k">AS</span><span class="w"> </span><span class="n">tabla</span><span class="p">,</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">    </span><span class="n">pg_size_pretty</span><span class="p">(</span><span class="n">pg_total_relation_size</span><span class="p">(</span><span class="n">relid</span><span class="p">))</span><span class="w">    </span><span class="k">AS</span><span class="w"> </span><span class="n">tamaño_total</span><span class="p">,</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">    </span><span class="n">pg_size_pretty</span><span class="p">(</span><span class="n">pg_relation_size</span><span class="p">(</span><span class="n">relid</span><span class="p">))</span><span class="w">          </span><span class="k">AS</span><span class="w"> </span><span class="n">solo_datos</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_user_tables</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">pg_total_relation_size</span><span class="p">(</span><span class="n">relid</span><span class="p">)</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="c1">-- Conexiones activas en este momento</span>
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">pid</span><span class="p">,</span><span class="w"> </span><span class="n">usename</span><span class="p">,</span><span class="w"> </span><span class="n">application_name</span><span class="p">,</span><span class="w"> </span><span class="k">state</span><span class="p">,</span><span class="w"> </span><span class="n">query</span>
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_activity</span>
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="k">WHERE</span><span class="w"> </span><span class="k">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'active'</span><span class="p">;</span>
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>
+</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a><span class="c1">-- Cantidad de filas por tabla</span>
+</span><span id="__span-19-18"><a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">relname</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">tabla</span><span class="p">,</span><span class="w"> </span><span class="n">n_live_tup</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">filas_estimadas</span>
+</span><span id="__span-19-19"><a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a><span class="k">FROM</span><span class="w"> </span><span class="n">pg_stat_user_tables</span>
+</span><span id="__span-19-20"><a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">n_live_tup</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</span></code></pre></div>
+<hr>
+<h2 id="transactions">Transactions<a class="headerlink" href="#transactions" title="Permanent link">¶</a></h2>
+<p>Una transacción es un bloque de operaciones que se ejecutan como una <strong>unidad atómica</strong>: o todo se guarda, o nada se guarda.</p>
+<pre class="mermaid"><code>flowchart LR
+    BEGIN --&gt; op1["UPDATE cuenta A\n-500"]
+    op1 --&gt; op2["UPDATE cuenta B\n+500"]
+    op2 --&gt; decision{{"¿Todo OK?"}}
+    decision --&gt;|Sí| COMMIT["COMMIT\n✅ cambios guardados"]
+    decision --&gt;|Error| ROLLBACK["ROLLBACK\n↩ todo deshecho"]</code></pre>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BEGIN</code></td>
+<td>Inicia la transacción. Nada se guarda hasta el <code>COMMIT</code></td>
+</tr>
+<tr>
+<td><code>COMMIT</code></td>
+<td>Confirma y persiste todos los cambios de la transacción</td>
+</tr>
+<tr>
+<td><code>ROLLBACK</code></td>
+<td>Deshace todos los cambios desde el último <code>BEGIN</code></td>
+</tr>
+<tr>
+<td><code>SAVEPOINT nombre</code></td>
+<td>Crea un punto de restauración parcial dentro de la transacción</td>
+</tr>
+<tr>
+<td><code>ROLLBACK TO nombre</code></td>
+<td>Deshace solo hasta el savepoint, no toda la transacción</td>
+</tr>
+</tbody>
+</table>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1">-- Transacción clásica: transferencia entre cuentas</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="k">BEGIN</span><span class="p">;</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">cuentas</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">500</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">cuentas</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">500</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="c1">-- Si llegamos acá sin error:</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="k">COMMIT</span><span class="p">;</span>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="c1">-- Si algo falló, en el bloque EXCEPT o manualmente:</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="c1">-- ROLLBACK;</span>
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="c1">-- Con savepoints</span>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="k">BEGIN</span><span class="p">;</span>
+</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">cuentas</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">500</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="n">SAVEPOINT</span><span class="w"> </span><span class="n">despues_del_debito</span><span class="p">;</span>
+</span><span id="__span-20-17"><a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">cuentas</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">500</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</span><span id="__span-20-18"><a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a><span class="c1">-- Si el segundo UPDATE falla, podemos volver al savepoint:</span>
+</span><span id="__span-20-19"><a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a><span class="k">ROLLBACK</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">despues_del_debito</span><span class="p">;</span>
+</span><span id="__span-20-20"><a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a><span class="k">COMMIT</span><span class="p">;</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Siempre usá transacciones para operaciones críticas</p>
+<p>Un <code>UPDATE</code> o <code>DELETE</code> sin <code>WHERE</code> en producción puede ser catastrófico. Envolvé las operaciones importantes en <code>BEGIN</code> / <code>COMMIT</code> para poder hacer <code>ROLLBACK</code> si algo falla.</p>
+</div>
+<hr>
+<h2 id="roles-y-permisos">Roles y permisos<a class="headerlink" href="#roles-y-permisos" title="Permanent link">¶</a></h2>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1">-- Crear usuario</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="n">mi_usuario</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="n">PASSWORD</span><span class="w"> </span><span class="s1">'contraseña_segura'</span><span class="p">;</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="c1">-- Crear rol</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">ROLE</span><span class="w"> </span><span class="n">solo_lectura</span><span class="p">;</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="c1">-- Dar permisos</span>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="k">GRANT</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="n">TABLES</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="k">SCHEMA</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">solo_lectura</span><span class="p">;</span>
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="k">GRANT</span><span class="w"> </span><span class="n">solo_lectura</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">mi_usuario</span><span class="p">;</span>
+</span><span id="__span-21-10"><a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>
+</span><span id="__span-21-11"><a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a><span class="c1">-- Dar todos los permisos sobre una tabla</span>
+</span><span id="__span-21-12"><a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">mi_usuario</span><span class="p">;</span>
+</span><span id="__span-21-13"><a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>
+</span><span id="__span-21-14"><a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a><span class="c1">-- Quitar permisos</span>
+</span><span id="__span-21-15"><a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a><span class="k">REVOKE</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">mi_usuario</span><span class="p">;</span>
+</span><span id="__span-21-16"><a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>
+</span><span id="__span-21-17"><a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a><span class="c1">-- Ver roles</span>
+</span><span id="__span-21-18"><a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a><span class="err">\</span><span class="n">du</span>
+</span></code></pre></div>
+<hr>
+<h2 id="importar-exportar-datos">Importar / Exportar datos<a class="headerlink" href="#importar-exportar-datos" title="Permanent link">¶</a></h2>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1">-- Exportar tabla a CSV (desde psql)</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="err">\</span><span class="k">copy</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="s1">'usuarios.csv'</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="n">CSV</span><span class="w"> </span><span class="n">HEADER</span><span class="p">;</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="c1">-- Importar desde CSV</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="err">\</span><span class="k">copy</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="p">,</span><span class="w"> </span><span class="n">edad</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="s1">'usuarios.csv'</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="n">CSV</span><span class="w"> </span><span class="n">HEADER</span><span class="p">;</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="c1">-- Exportar query a CSV</span>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="err">\</span><span class="k">copy</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">nombre</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">usuarios</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">activo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">TRUE</span><span class="p">)</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="s1">'activos.csv'</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="n">CSV</span><span class="w"> </span><span class="n">HEADER</span><span class="p">;</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># Backup completo de la base de datos (desde terminal)</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>pg_dump<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>mi_base<span class="w"> </span>&gt;<span class="w"> </span>backup.sql
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="c1"># Restaurar</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>psql<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>mi_base<span class="w"> </span>&lt;<span class="w"> </span>backup.sql
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="c1"># Backup en formato comprimido</span>
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>pg_dump<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-F<span class="w"> </span>c<span class="w"> </span>mi_base<span class="w"> </span>&gt;<span class="w"> </span>backup.dump
+</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>pg_restore<span class="w"> </span>-U<span class="w"> </span>postgres<span class="w"> </span>-d<span class="w"> </span>mi_base<span class="w"> </span>backup.dump
+</span></code></pre></div>
 
 
 
